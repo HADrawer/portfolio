@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hashem Ahmed — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">hashem alsaie</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-tag">Open to opportunities</div>
+      <h1>I build systems,<br><span class="gradient-text">not just websites.</span></h1>
+      <p class="hero-sub">
+        Hashem Ahmed — CS student, backend builder, self-taught.<br>
+        Based in Bahrain. Writing Go and JS that actually ships.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects &rarr;</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll to explore</div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label reveal">About</div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2>Wired differently<br>from the start.</h2>
+        <p>University gave me a degree path. <span>Self-learning gave me actual skills.</span> While most students were still studying syntax, I was already deploying real applications and learning from what broke in production.</p>
+        <p>I'm a Computer Science student at the University of Bahrain specializing in Cloud Computing — but my real education happened late at night building things no one assigned me. I <span>built a full social media platform</span> with WebSockets and Go, wrote a JavaScript mini-framework to understand how React actually works, and I'm currently shipping an AI-powered travel planner.</p>
+        <p>I also train at <span>Reboot Coding Institute</span>, where hands-on software engineering is the curriculum — exactly how I prefer to learn.</p>
+        <p>My principle is simple: <span>speed + execution beats perfection.</span> Ship it. Fix it. Ship it again.</p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-box"><div class="stat-num">4+</div><div class="stat-label">Real Projects Shipped</div></div>
+        <div class="stat-box"><div class="stat-num">2</div><div class="stat-label">Institutes Attended</div></div>
+        <div class="stat-box"><div class="stat-num">0</div><div class="stat-label">Tutorials Relied On</div></div>
+        <div class="stat-box"><div class="stat-num">&infin;</div><div class="stat-label">Drive to Build</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills" style="background:var(--bg2);max-width:100%;padding:120px 48px;">
+    <div class="skills-wrapper">
+      <div class="section-label reveal">Skills</div>
+      <h2 class="reveal">I understand the<br>machine, not just the tools.</h2>
+      <div class="skills-grid reveal">
+        <div class="skill-category">
+          <div class="skill-cat-title">Frontend</div>
+          <div class="skill-pills">
+            <span class="pill">HTML</span><span class="pill">CSS</span>
+            <span class="pill">JavaScript</span><span class="pill">Next.js</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-title">Backend</div>
+          <div class="skill-pills">
+            <span class="pill">Go (Golang)</span><span class="pill">REST APIs</span>
+            <span class="pill">WebSockets</span><span class="pill">SQLite</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-title">Web &amp; Systems</div>
+          <div class="skill-pills">
+            <span class="pill">SPA Architecture</span><span class="pill">Progressive Web Apps</span>
+            <span class="pill">JSON Client&ndash;Server</span><span class="pill">HTTP Servers</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-title">Concepts &amp; Tools</div>
+          <div class="skill-pills">
+            <span class="pill">Algorithms</span><span class="pill">Cloud Computing</span>
+            <span class="pill">Linux / Unix</span><span class="pill">Git</span>
+            <span class="pill">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label reveal">Projects</div>
+    <h2 class="reveal">Things I actually<br>built and shipped.</h2>
+    <div class="projects-list">
+
+      <div class="project-card reveal">
+        <div>
+          <div class="project-num">01 &mdash; Featured</div>
+          <div class="project-name">Social Media Platform</div>
+          <p class="project-desc">A full social media&ndash;style platform built from scratch in Go and vanilla JavaScript. No frameworks, no shortcuts &mdash; clean architecture, real backend logic, and a frontend SPA that handles everything a modern social app needs.</p>
+          <div class="project-features">
+            <div class="feature">Follow / unfollow with public &amp; private account logic</div>
+            <div class="feature">Backend authorization and session management</div>
+            <div class="feature">Real-time updates via WebSockets</div>
+            <div class="feature">Scalable REST API architecture</div>
+            <div class="feature">SPA frontend &mdash; zero framework dependencies</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Go</span><span class="tag">JavaScript</span><span class="tag">SQLite</span>
+            <span class="tag teal">WebSockets</span><span class="tag teal">REST API</span><span class="tag teal">SPA</span>
+          </div>
+        </div>
+        <div class="project-arrow">&nearr;</div>
+      </div>
+
+      <div class="project-card reveal">
+        <div>
+          <div class="project-num">02 &mdash; Architecture</div>
+          <div class="project-name">SPA Web App &mdash; Go Backend</div>
+          <p class="project-desc">Designed and built a Go backend serving a complete Single Page Application frontend. All client&ndash;server communication handled through structured JSON APIs &mdash; no external frameworks involved. Pure understanding, pure execution.</p>
+          <div class="project-features">
+            <div class="feature">Go-based backend with clean, structured API design</div>
+            <div class="feature">JSON-based client&ndash;server communication layer</div>
+            <div class="feature">Full SPA frontend without any dependencies</div>
+            <div class="feature">Separation of concerns baked into the architecture</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Go</span><span class="tag">JavaScript</span><span class="tag">JSON</span>
+            <span class="tag teal">REST API</span><span class="tag teal">SPA</span>
+          </div>
+        </div>
+        <div class="project-arrow">&nearr;</div>
+      </div>
+
+      <div class="project-card reveal">
+        <div>
+          <div class="project-num">03 &mdash; Deep Dive</div>
+          <div class="project-name">Custom JavaScript Mini-Framework</div>
+          <p class="project-desc">Built a lightweight JavaScript framework from scratch using only DOM APIs. Most developers treat frameworks as black boxes &mdash; I built mine to understand exactly what's happening under the hood. Now used as the foundation for my own SPA projects.</p>
+          <div class="project-features">
+            <div class="feature">DOM abstraction layer built from scratch</div>
+            <div class="feature">Client-side routing system</div>
+            <div class="feature">Reactive state management</div>
+            <div class="feature">Custom event handling and binding</div>
+            <div class="feature">Foundation for scalable SPA projects</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span><span class="tag">DOM APIs</span>
+            <span class="tag teal">Architecture</span><span class="tag teal">First Principles</span>
+          </div>
+        </div>
+        <div class="project-arrow">&nearr;</div>
+      </div>
+
+      <div class="project-card reveal">
+        <div>
+          <div class="project-num">04 &mdash; AI-Powered</div>
+          <div class="project-name">AI Travel Itinerary Planner</div>
+          <p class="project-desc">An AI-powered travel planning platform that generates dynamic, personalized itineraries based on user input. Built with Next.js and integrated with external AI APIs &mdash; clean UI, solid performance, maintainable architecture.</p>
+          <div class="project-features">
+            <div class="feature">AI-generated travel plans based on user preferences</div>
+            <div class="feature">External API integration for dynamic content</div>
+            <div class="feature">Clean, performant Next.js frontend</div>
+            <div class="feature">Maintainable and scalable codebase</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Next.js</span><span class="tag">JavaScript</span>
+            <span class="tag teal">External APIs</span><span class="tag teal">AI</span>
+          </div>
+        </div>
+        <div class="project-arrow">&nearr;</div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-label reveal">Education</div>
+    <h2 class="reveal">Where I studied.<br>What I actually learned.</h2>
+    <div class="edu-list">
+
+      <div class="edu-card reveal">
+        <div class="edu-left">
+          <div class="edu-institution">University of Bahrain</div>
+          <div class="edu-degree">B.Sc. Computer Science &mdash; <span>Cloud Computing Track</span><br>Building the theoretical foundation while the real education happened in side projects.</div>
+        </div>
+        <div class="edu-right">
+          <div class="edu-year">2022 &mdash; Present</div>
+          <div class="edu-badge">In Progress</div>
+        </div>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-left">
+          <div class="edu-institution">Reboot Coding Institute</div>
+          <div class="edu-degree">Software Engineering Program<br>Intensive, hands-on training in real-world software development &mdash; exactly how I like to learn.</div>
+        </div>
+        <div class="edu-right">
+          <div class="edu-year">2024 &mdash; Present</div>
+          <div class="edu-badge">Active</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- MINDSET -->
+  <section id="mindset" style="background:var(--bg2);max-width:100%;text-align:center;padding:120px 48px;">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="section-label reveal" style="justify-content:center;">Mindset</div>
+      <h2 class="reveal">How I operate.</h2>
+      <div class="mindset-grid reveal">
+        <div class="mindset-card">
+          <span class="mindset-icon">&#x26A1;</span>
+          <div class="mindset-quote">I don't wait to be taught.<em>I build, break things, and learn from the wreckage.</em></div>
+        </div>
+        <div class="mindset-card">
+          <span class="mindset-icon">&#x1F3AF;</span>
+          <div class="mindset-quote">Speed + execution beats perfection.<em>A working product beats a perfect plan every time.</em></div>
+        </div>
+        <div class="mindset-card">
+          <span class="mindset-icon">&#x1F3D7;&#xFE0F;</span>
+          <div class="mindset-quote">I focus on results, not excuses.<em>If it can be built, I'll find a way to build it.</em></div>
+        </div>
+        <div class="mindset-card">
+          <span class="mindset-icon">&#x1F50D;</span>
+          <div class="mindset-quote">I open the black box.<em>I'd rather understand the engine than just drive the car.</em></div>
+        </div>
+        <div class="mindset-card">
+          <span class="mindset-icon">&#x1F4C8;</span>
+          <div class="mindset-quote">Growth is the only metric.<em>Financially, technically, mentally &mdash; always compounding.</em></div>
+        </div>
+        <div class="mindset-card">
+          <span class="mindset-icon">&#x1F6E0;&#xFE0F;</span>
+          <div class="mindset-quote">I solve real problems.<em>Not demos. Not tutorials. Actual systems that work.</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-wrapper">
+      <div class="contact-left">
+        <div class="section-label reveal">Contact</div>
+        <h2 class="reveal">Let's build<br>something real.</h2>
+        <p class="reveal">Got a problem worth solving? A product to ship? Or just want to talk systems and code? I'm all in.</p>
+        <div class="contact-links reveal">
+          <a href="mailto:hashemalsaie0457@gmail.com" class="contact-link">
+            <div class="contact-link-icon">&#x2709;</div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">hashemalsaie0457@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+97336077327" class="contact-link">
+            <div class="contact-link-icon">&#x260E;</div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">Phone</span>
+              <span class="contact-link-value">+973 36077327</span>
+            </div>
+          </a>
+          <a href="https://github.com/HADrawer" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">&#x2325;</div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">https://github.com/HADrawer</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/hashem-alsaie-8a0215244/" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">in</div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">linkedin.com/in/hashem-alsaie</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-right reveal">
+        <div class="availability-box">
+          <div class="availability-dot"></div>
+          <div class="availability-label">Currently Available</div>
+          <div class="availability-text">Open to freelance,<br>internships &amp; collabs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>Built with intention. No templates. No shortcuts.</span>
+    <span style="color:var(--muted);">&copy; 2025 &mdash; Hashem Ahmed</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

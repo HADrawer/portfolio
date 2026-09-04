@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#FFF6EA">
+  <meta name="theme-color" content="#FFC53D">
   <title>Hashem Alkhaldy — Full-stack developer</title>
   <meta name="description" content="Hashem Alkhaldy is a full-stack developer in Bahrain. APIs, databases, and blockchain tooling.">
   <link rel="canonical" href="https://hadrawer.github.io/portfolio/">
@@ -14,106 +14,125 @@
   <meta property="og:image" content="https://hadrawer.github.io/portfolio/assets/images/profile.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#top">Hashem<span class="dot">.</span></a>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="mono" href="#top">H<span>.</span></a>
       <nav aria-label="Sections">
         <a href="#work" data-i18n="nav.work">Work</a>
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
-        <button id="langToggle" class="lang-btn" type="button">عربي</button>
       </nav>
+      <button id="langToggle" class="lang" type="button">عربي</button>
     </div>
   </header>
 
   <main id="top">
-    <section class="wrap hero">
-      <div class="hero-text">
-        <p class="hello" data-i18n="hero.hello">Hello, my name is</p>
-        <h1>Hashem Alkhaldy</h1>
-        <p class="role" data-i18n="hero.role">Full-stack developer · Bahrain</p>
-        <p class="lede" data-i18n="hero.lede">I build backends that hold up and frontends people can actually use — APIs, databases, and a bit of blockchain.</p>
-        <p class="cta">
-          <a class="btn btn-primary" href="mailto:hashemalsaie0457@gmail.com" data-i18n="hero.hire">Hire me</a>
-          <a class="btn btn-ghost" href="assets/resume/Hashem_Alkhaldy_CV.pdf" data-i18n="hero.cv">Download CV</a>
+    <section class="hero">
+      <span class="ghost" aria-hidden="true">HASHEM</span>
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="pill" data-i18n="hero.hello">Hello, my name is</p>
+          <h1>Hashem<br>Alkhaldy</h1>
+          <p class="roles"><span data-i18n="hero.r1">Full-stack developer</span><i>·</i><span data-i18n="hero.r2">APIs</span><i>·</i><span data-i18n="hero.r3">Blockchain</span></p>
+          <p class="lede" data-i18n="hero.lede">I build backends that hold up and frontends people can actually use.</p>
+          <p class="cta">
+            <a class="btn solid" href="mailto:hashemalsaie0457@gmail.com" data-i18n="hero.hire">Hire me</a>
+            <a class="btn line" href="assets/resume/Hashem_Alkhaldy_CV.pdf" data-i18n="hero.cv">Download CV</a>
+          </p>
+          <p class="social">
+            <a href="https://github.com/HADrawer">GitHub</a>
+            <a href="https://www.linkedin.com/in/hashem-alkhaldy">LinkedIn</a>
+          </p>
+        </div>
+        <div class="hero-art">
+          <span class="work-badge"><i></i><b data-i18n="hero.open">Open to work</b></span>
+          <img src="assets/images/profile.jpg" alt="Portrait of Hashem Alkhaldy" width="672" height="729">
+        </div>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Rust ✦ Go ✦ TypeScript ✦ Python ✦ Solidity ✦ React ✦ Next.js ✦ FastAPI ✦ PostgreSQL ✦ GraphQL ✦ Docker ✦ Ethereum ✦&nbsp;</span>
+          <span>Rust ✦ Go ✦ TypeScript ✦ Python ✦ Solidity ✦ React ✦ Next.js ✦ FastAPI ✦ PostgreSQL ✦ GraphQL ✦ Docker ✦ Ethereum ✦&nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="band paper" id="about">
+      <div class="wrap">
+        <p class="sec-kick rv" data-i18n="about.kick">About</p>
+        <h2 class="rv">Me, <em data-i18n="about.em">in short</em></h2>
+        <div class="about-cols">
+          <p class="rv" data-i18n="about.p1">I'm Hashem, a full-stack developer from Bahrain. Two years at Reboot building real systems with other people — Rust servers, Go social apps, Solidity marketplaces — then an internship at Script Solutions on SaaS features, APIs, and the unglamorous debugging in between.</p>
+          <p class="rv" data-i18n="about.p2">Most of my work is APIs, databases, and auth. The blockchain parts came from genuine curiosity about how money moves on-chain, not hype. Everything below is code you can read.</p>
+        </div>
+        <ol class="facts">
+          <li class="rv"><b>01</b><div><strong>Script Solutions</strong><span data-i18n="about.job">Software developer intern, Jul–Aug 2026</span></div></li>
+          <li class="rv"><b>02</b><div><strong data-i18n="about.edu1t">University of Bahrain</strong><span data-i18n="about.edu1">BSc Computer Science, cloud track</span></div></li>
+          <li class="rv"><b>03</b><div><strong>Reboot</strong><span data-i18n="about.edu2">Full-stack diploma, 2024–2026</span></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="band works" id="work">
+      <div class="wrap">
+        <p class="sec-kick rv" data-i18n="work.kick">Portfolio</p>
+        <h2 class="rv" data-i18n="work.title">My recent works</h2>
+        <div class="cards">
+          <article class="work rv">
+            <span class="idx">01</span>
+            <h3><a href="https://github.com/HADrawer/ClinicFlow">ClinicFlow</a></h3>
+            <p class="stack">Next.js · FastAPI · PostgreSQL</p>
+            <p data-i18n="work.p1">Multi-tenant clinic management — patients, appointments, pharmacy, billing. Tenant isolation and roles done properly.</p>
+          </article>
+          <article class="work rv">
+            <span class="idx">02</span>
+            <h3><a href="https://github.com/HADrawer/financial-instruments">Token marketplace</a></h3>
+            <p class="stack">Solidity · Ethereum · REST</p>
+            <p data-i18n="work.p2">Stablecoin, tokenized shares, bonds — with order matching and withdrawal guards that protect locked funds.</p>
+          </article>
+          <article class="work rv">
+            <span class="idx">03</span>
+            <h3><a href="https://github.com/HADrawer/social-network">Social network</a></h3>
+            <p class="stack">Go · Next.js · SQLite</p>
+            <p data-i18n="work.p3">Auth, profiles, and public/private visibility. My part was accounts and privacy; teammates did chat and groups.</p>
+          </article>
+          <article class="work rv">
+            <span class="idx">04</span>
+            <h3><a href="https://github.com/HADrawer/nft-marketplace">NFT marketplace</a></h3>
+            <p class="stack">Solidity · Ethereum</p>
+            <p data-i18n="work.p4">Listing, buying, and transferring NFTs through contract calls, wired to marketplace state.</p>
+          </article>
+          <article class="work rv">
+            <span class="idx">05</span>
+            <h3><a href="https://github.com/HADrawer/AI-Travel-Itinerary-Planner">AI travel planner</a></h3>
+            <p class="stack">Next.js · FastAPI · PostgreSQL</p>
+            <p data-i18n="work.p5">Graduation project: bilingual itineraries, recommendations, saved trips. I did the APIs and accounts.</p>
+          </article>
+          <article class="work rv">
+            <span class="idx">06</span>
+            <h3><a href="https://github.com/HADrawer/Payment-Channel">Payment channel</a></h3>
+            <p class="stack">Node.js · CLI · RPC</p>
+            <p data-i18n="work.p6">A CLI prototype for off-chain channels — funding, balances, node info. Built to understand channel state.</p>
+          </article>
+        </div>
+        <p class="more rv"><span data-i18n="work.more">More experiments live on</span> <a href="https://github.com/HADrawer?tab=repositories">GitHub</a></p>
+      </div>
+    </section>
+
+    <section class="band contact" id="contact">
+      <div class="wrap">
+        <p class="sec-kick light rv" data-i18n="contact.kick">Contact</p>
+        <h2 class="rv" data-i18n="contact.title">Let's build something.</h2>
+        <p class="rv" data-i18n="contact.p">Email is fastest. I read everything, even if I reply at odd hours.</p>
+        <p class="cta rv">
+          <a class="btn sun" href="mailto:hashemalsaie0457@gmail.com" data-i18n="contact.email">Email me</a>
+          <a class="btn outline" href="tel:+97336077327">+973 36077327</a>
         </p>
-        <p class="social">
-          <a href="https://github.com/HADrawer">GitHub</a>
-          <a href="https://www.linkedin.com/in/hashem-alkhaldy">LinkedIn</a>
-        </p>
       </div>
-      <div class="hero-photo">
-        <span class="sun" aria-hidden="true"></span>
-        <img src="assets/images/profile.jpg" alt="Portrait of Hashem Alkhaldy" width="672" height="729">
-      </div>
-    </section>
-
-    <section class="wrap" id="about">
-      <h2 data-i18n="about.title">About me</h2>
-      <p data-i18n="about.p1">I'm Hashem, a full-stack developer from Bahrain. Two years at Reboot building real systems with other people — Rust servers, Go social apps, Solidity marketplaces — then an internship at Script Solutions on SaaS features, APIs, and the unglamorous debugging in between.</p>
-      <p data-i18n="about.p2">Most of my work is APIs, databases, and auth. The blockchain parts came from genuine curiosity about how money moves on-chain, not hype. Everything below is code you can read.</p>
-      <ul class="facts">
-        <li><strong>Script Solutions</strong> — <span data-i18n="about.job">Software developer intern, Jul–Aug 2026</span></li>
-        <li><strong data-i18n="about.edu1t">University of Bahrain</strong> — <span data-i18n="about.edu1">BSc Computer Science, cloud track</span></li>
-        <li><strong>Reboot</strong> — <span data-i18n="about.edu2">Full-stack diploma, 2024–2026</span></li>
-      </ul>
-    </section>
-
-    <section class="wrap" id="work">
-      <h2 data-i18n="work.title">My recent works</h2>
-      <div class="grid">
-        <article class="card c1">
-          <h3><a href="https://github.com/HADrawer/ClinicFlow">ClinicFlow</a></h3>
-          <p class="stack">Next.js · FastAPI · PostgreSQL</p>
-          <p data-i18n="work.p1">Multi-tenant clinic management — patients, appointments, pharmacy, billing. Tenant isolation and roles done properly.</p>
-        </article>
-        <article class="card c2">
-          <h3><a href="https://github.com/HADrawer/financial-instruments">Token marketplace</a></h3>
-          <p class="stack">Solidity · Ethereum · REST</p>
-          <p data-i18n="work.p2">Stablecoin, tokenized shares, bonds — with order matching and withdrawal guards that protect locked funds.</p>
-        </article>
-        <article class="card c3">
-          <h3><a href="https://github.com/HADrawer/social-network">Social network</a></h3>
-          <p class="stack">Go · Next.js · SQLite</p>
-          <p data-i18n="work.p3">Auth, profiles, and public/private visibility. My part was accounts and privacy; teammates did chat and groups.</p>
-        </article>
-        <article class="card c4">
-          <h3><a href="https://github.com/HADrawer/nft-marketplace">NFT marketplace</a></h3>
-          <p class="stack">Solidity · Ethereum</p>
-          <p data-i18n="work.p4">Listing, buying, and transferring NFTs through contract calls, wired to marketplace state.</p>
-        </article>
-        <article class="card c5">
-          <h3><a href="https://github.com/HADrawer/AI-Travel-Itinerary-Planner">AI travel planner</a></h3>
-          <p class="stack">Next.js · FastAPI · PostgreSQL</p>
-          <p data-i18n="work.p5">Graduation project: bilingual itineraries, recommendations, saved trips. I did the APIs and accounts.</p>
-        </article>
-        <article class="card c6">
-          <h3><a href="https://github.com/HADrawer/Payment-Channel">Payment channel</a></h3>
-          <p class="stack">Node.js · CLI · RPC</p>
-          <p data-i18n="work.p6">A CLI prototype for off-chain channels — funding, balances, node info. Built to understand channel state.</p>
-        </article>
-      </div>
-      <p class="more"><span data-i18n="work.more">More experiments live on</span> <a href="https://github.com/HADrawer?tab=repositories">GitHub</a>.</p>
-    </section>
-
-    <section class="wrap" id="skills">
-      <h2 data-i18n="skills.title">What I use</h2>
-      <p class="chips">
-        <span>Rust</span><span>Go</span><span>TypeScript</span><span>Python</span><span>Solidity</span><span>React</span><span>Next.js</span><span>FastAPI</span><span>PostgreSQL</span><span>GraphQL</span><span>Docker</span><span>Ethereum</span>
-      </p>
-    </section>
-
-    <section class="wrap contact" id="contact">
-      <h2 data-i18n="contact.title">Contact me</h2>
-      <p data-i18n="contact.p">Email is fastest. I read everything, even if I reply at odd hours.</p>
-      <p class="cta">
-        <a class="btn btn-primary" href="mailto:hashemalsaie0457@gmail.com" data-i18n="contact.email">Email me</a>
-        <a class="btn btn-ghost" href="tel:+97336077327" data-i18n="contact.phone">+973 36077327</a>
-      </p>
     </section>
   </main>
 

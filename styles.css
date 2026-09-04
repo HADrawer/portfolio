@@ -118,8 +118,8 @@ a:hover { color: var(--signal); }
 
 .hero-art { justify-self: end; text-align: center; will-change: transform; }
 .portrait {
-  width: min(340px, 72vw);
-  aspect-ratio: 4 / 5;
+  width: min(320px, 70vw);
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: top;
   border-radius: 22px;

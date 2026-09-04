@@ -1,11 +1,11 @@
 :root {
-  --bg: #E9F0E4;
-  --surface: #F6F9F2;
+  --bg: #E4EBDD;
+  --surface: #F2F6ED;
   --ink: #1A2119;
-  --muted: #5A695C;
-  --line: #CFDBC9;
+  --muted: #57675A;
+  --line: #CBD6C4;
   --signal: #147A48;
-  --signal-ink: #0E6639;
+  --signal-ink: #0D6337;
   --card: #FFFFFF;
 }
 
@@ -52,6 +52,9 @@ a:hover { color: var(--signal); }
 .name { font-weight: 700; font-size: 1.05rem; color: var(--ink); text-decoration: none; }
 .brand { display: inline-flex; align-items: center; gap: 1rem; }
 .brand-logo { height: 34px; width: 34px; border-radius: 9px; }
+.logo-light { display: none; }
+[data-theme="light"] .logo-light { display: block; }
+[data-theme="light"] .logo-dark { display: none; }
 .links-inline { display: flex; gap: 1.3rem; }
 .links-inline a { color: var(--muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
 .links-inline a:hover { color: var(--ink); }
@@ -193,12 +196,14 @@ main h2 {
 [dir="rtl"] .jobs a:hover .arrow { transform: translateX(-5px) scaleX(-1); }
 [dir="rtl"] .jobs a .arrow { display: inline-block; transform: scaleX(-1); }
 .stack {
+  display: block;
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 0.76rem;
   color: var(--muted);
-  text-align: end;
-  white-space: nowrap;
+  margin-top: 0.15rem;
 }
+.stack span { display: inline-flex; align-items: center; gap: 0.28rem; }
+.stack span img { width: 14px; height: 14px; background: #fff; border-radius: 4px; padding: 1px; }
 .note { display: block; grid-column: 1 / -1; color: var(--muted); font-size: 0.95rem; }
 .more { margin-top: 1.2rem; color: var(--muted); }
 
@@ -219,6 +224,7 @@ main h2 {
 .exp-head strong { display: block; font-size: 1.05rem; }
 .exp-head span { color: var(--muted); font-size: 0.92rem; }
 .exp-head img { height: 44px; width: auto; flex: none; }
+#exp .exp-head + p { margin-inline-start: calc(44px + 1rem); }
 
 /* education */
 .edu { list-style: none; display: grid; gap: 1rem; }

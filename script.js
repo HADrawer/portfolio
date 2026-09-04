@@ -1,12 +1,21 @@
 var I18N = {
   en: {
     "ui.theme": "Dark",
+    "nav.work": "Work",
+    "nav.about": "About",
+    "nav.contact": "Contact",
     "hero.kicker": "Bahrain · Open to work",
     "hero.role": "Full-stack developer",
     "hero.lede": "I build APIs, databases, and web apps. Lately, blockchain tooling.",
     "hero.email": "Email me",
     "hero.cv": "CV (PDF)",
+    "hero.copy": "Copy email",
+    "hero.cap": "Manama, Bahrain — GMT+3",
+    "hero.copied": "Copied",
     "work.title": "Work",
+    "work.all": "All",
+    "work.backend": "Backend",
+    "work.chain": "Blockchain",
     "work.more": "Everything else is on",
     "work.p1": "Clinic management with tenant isolation and roles.",
     "work.p2": "Stablecoin, shares, bonds — with withdrawal guards.",
@@ -29,12 +38,21 @@ var I18N = {
   },
   ar: {
     "ui.theme": "داكن",
+    "nav.work": "أعمالي",
+    "nav.about": "عني",
+    "nav.contact": "تواصل",
     "hero.kicker": "البحرين · متاح للعمل",
     "hero.role": "مطور full-stack",
     "hero.lede": "أبني واجهات برمجية وقواعد بيانات وتطبيقات ويب. وأخيرًا أدوات blockchain.",
     "hero.email": "راسلني",
     "hero.cv": "السيرة (PDF)",
+    "hero.copy": "نسخ الإيميل",
+    "hero.cap": "المنامة، البحرين — GMT+3",
+    "hero.copied": "تم النسخ",
     "work.title": "الأعمال",
+    "work.all": "الكل",
+    "work.backend": "خلفية",
+    "work.chain": "بلوكتشين",
     "work.more": "الباقي كله على",
     "work.p1": "إدارة عيادات مع عزل البيانات والصلاحيات.",
     "work.p2": "عملة مستقرة وأسهم وسندات — مع ضوابط سحب.",
@@ -57,6 +75,8 @@ var I18N = {
   }
 };
 
+var EMAIL = "hashemalsaie0457@gmail.com";
+
 function currentTheme() {
   return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
 }
@@ -66,6 +86,10 @@ function applyTheme(theme) {
   var meta = document.querySelector('meta[name="theme-color"]');
   if (meta) meta.setAttribute("content", theme === "dark" ? "#14110D" : "#FAF7F2");
   try { localStorage.setItem("theme", theme); } catch (e) {}
+}
+
+function langNow() {
+  return document.documentElement.lang === "ar" ? "ar" : "en";
 }
 
 function applyLang(lang) {
@@ -84,6 +108,91 @@ function applyLang(lang) {
   try { localStorage.setItem("lang", lang); } catch (e) {}
 }
 
+function initFilters() {
+  var chips = document.querySelectorAll(".fchip");
+  if (!chips.length) return;
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      chips.forEach(function (c) { c.classList.remove("on"); });
+      chip.classList.add("on");
+      var f = chip.getAttribute("data-filter");
+      document.querySelectorAll(".jobs li").forEach(function (li) {
+        var tags = (li.getAttribute("data-tags") || "").split(" ");
+        li.classList.toggle("hide", f !== "all" && tags.indexOf(f) === -1);
+      });
+    });
+  });
+}
+
+function flashCopied(btn) {
+  var dict = I18N[langNow()] || I18N.en;
+  var orig = btn.textContent;
+  btn.textContent = dict["hero.copied"];
+  setTimeout(function () { btn.textContent = orig; }, 1500);
+}
+
+function copyText(text, done) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text); done(); });
+  } else {
+    fallbackCopy(text);
+    done();
+  }
+}
+
+function fallbackCopy(text) {
+  var ta = document.createElement("textarea");
+  ta.value = text;
+  ta.style.position = "fixed";
+  ta.style.opacity = "0";
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand("copy"); } catch (e) {}
+  document.body.removeChild(ta);
+}
+
+function initCopy() {
+  ["copyEmail", "copyEmail2"].forEach(function (id) {
+    var btn = document.getElementById(id);
+    if (btn) btn.addEventListener("click", function () {
+      copyText(EMAIL, function () { flashCopied(btn); });
+    });
+  });
+}
+
+function initTilt() {
+  var art = document.getElementById("heroArt");
+  var img = art ? art.querySelector(".portrait") : null;
+  if (!art || !img) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (window.matchMedia("(hover: none)").matches) return;
+  art.addEventListener("mousemove", function (e) {
+    var r = art.getBoundingClientRect();
+    var x = (e.clientX - r.left) / r.width - 0.5;
+    var y = (e.clientY - r.top) / r.height - 0.5;
+    img.style.transform = "perspective(700px) rotateY(" + (x * 8) + "deg) rotateX(" + (-y * 8) + "deg)";
+  });
+  art.addEventListener("mouseleave", function () { img.style.transform = ""; });
+}
+
+function initReveal() {
+  if (!("IntersectionObserver" in window)) return;
+  document.documentElement.classList.add("js");
+  var els = document.querySelectorAll(".rv");
+  var show = function (el) { el.classList.add("in"); };
+  els.forEach(function (el) {
+    var r = el.getBoundingClientRect();
+    if (r.top < window.innerHeight * 0.98) { show(el); return; }
+  });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { show(en.target); io.unobserve(en.target); }
+    });
+  }, { threshold: 0.05, rootMargin: "0px 0px 10% 0px" });
+  els.forEach(function (el) { io.observe(el); });
+  setTimeout(function () { els.forEach(show); }, 1200);
+}
+
 (function init() {
   var toggle = document.getElementById("themeToggle");
   if (toggle) toggle.addEventListener("click", function () {
@@ -91,7 +200,7 @@ function applyLang(lang) {
   });
   var langToggle = document.getElementById("langToggle");
   if (langToggle) langToggle.addEventListener("click", function () {
-    applyLang(document.documentElement.lang === "ar" ? "en" : "ar");
+    applyLang(langNow() === "ar" ? "en" : "ar");
   });
   var lang = "en";
   try { lang = localStorage.getItem("lang") || "en"; } catch (e) {}
@@ -99,4 +208,8 @@ function applyLang(lang) {
   applyLang(lang);
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
+  initFilters();
+  initCopy();
+  initTilt();
+  initReveal();
 })();

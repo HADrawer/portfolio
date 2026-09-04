@@ -22,13 +22,18 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="top">
     <div class="wrap top-in">
       <a class="name" href="#top">Hashem Alkhaldy</a>
+      <nav class="links-inline" aria-label="Sections">
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
       <div class="toggles">
         <button id="themeToggle" class="chip" type="button" aria-label="Toggle theme">
           <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="4.2"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3 3l1.4 1.4M11.6 11.6L13 13M13 3l-1.4 1.4M4.4 11.6L3 13"/></svg>
@@ -39,54 +44,67 @@
     </div>
   </header>
 
-  <main id="top" class="wrap">
-    <section class="hero">
-      <img class="avatar" src="assets/images/profile.jpg" alt="Portrait of Hashem Alkhaldy" width="240" height="240">
-      <p class="kicker" data-i18n="hero.kicker">Bahrain · Open to work</p>
-      <h1>Hashem Alkhaldy</h1>
-      <p class="role" data-i18n="hero.role">Full-stack developer</p>
-      <p class="lede" data-i18n="hero.lede">I build APIs, databases, and web apps. Lately, blockchain tooling.</p>
-      <p class="row">
-        <a class="btn" href="mailto:hashemalsaie0457@gmail.com" data-i18n="hero.email">Email me</a>
-        <a class="btn ghost" href="assets/resume/Hashem_Alkhaldy_CV.pdf" data-i18n="hero.cv">CV (PDF)</a>
-      </p>
-      <p class="links">
-        <a href="https://github.com/HADrawer">GitHub</a>
-        <a href="https://www.linkedin.com/in/hashem-alkhaldy">LinkedIn</a>
-        <a href="tel:+97336077327">+973 36077327</a>
-      </p>
+  <main id="top">
+    <section class="wrap hero">
+      <div class="hero-text">
+        <p class="kicker" data-i18n="hero.kicker">Bahrain · Open to work</p>
+        <h1>Hashem Alkhaldy</h1>
+        <p class="role" data-i18n="hero.role">Full-stack developer</p>
+        <p class="lede" data-i18n="hero.lede">I build APIs, databases, and web apps. Lately, blockchain tooling.</p>
+        <p class="row">
+          <a class="btn" href="mailto:hashemalsaie0457@gmail.com" data-i18n="hero.email">Email me</a>
+          <a class="btn ghost" href="assets/resume/Hashem_Alkhaldy_CV.pdf" data-i18n="hero.cv">CV (PDF)</a>
+          <button class="btn ghost" id="copyEmail" type="button" data-i18n="hero.copy">Copy email</button>
+        </p>
+        <p class="links">
+          <a href="https://github.com/HADrawer">GitHub</a>
+          <a href="https://www.linkedin.com/in/hashem-alkhaldy">LinkedIn</a>
+          <a href="tel:+97336077327">+973 36077327</a>
+        </p>
+      </div>
+      <div class="hero-art" id="heroArt">
+        <img class="portrait" src="assets/images/profile.jpg" alt="Portrait of Hashem Alkhaldy" width="768" height="870">
+        <p class="caption mono" data-i18n="hero.cap">Manama, Bahrain — GMT+3</p>
+      </div>
     </section>
 
-    <section id="work">
-      <h2 data-i18n="work.title">Work</h2>
+    <section class="wrap" id="work">
+      <div class="sec-head">
+        <h2 data-i18n="work.title">Work</h2>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="fchip on" data-filter="all" data-i18n="work.all">All</button>
+          <button class="fchip" data-filter="backend" data-i18n="work.backend">Backend</button>
+          <button class="fchip" data-filter="chain" data-i18n="work.chain">Blockchain</button>
+        </div>
+      </div>
       <ul class="jobs">
-        <li>
-          <a href="https://github.com/HADrawer/ClinicFlow">ClinicFlow</a>
+        <li class="rv" data-tags="backend">
+          <a href="https://github.com/HADrawer/ClinicFlow">ClinicFlow <span class="arrow" aria-hidden="true">→</span></a>
           <span class="stack">Next.js · FastAPI · PostgreSQL</span>
           <span class="note" data-i18n="work.p1">Clinic management with tenant isolation and roles.</span>
         </li>
-        <li>
-          <a href="https://github.com/HADrawer/financial-instruments">Token marketplace</a>
+        <li class="rv" data-tags="chain">
+          <a href="https://github.com/HADrawer/financial-instruments">Token marketplace <span class="arrow" aria-hidden="true">→</span></a>
           <span class="stack">Solidity · Ethereum · REST</span>
           <span class="note" data-i18n="work.p2">Stablecoin, shares, bonds — with withdrawal guards.</span>
         </li>
-        <li>
-          <a href="https://github.com/HADrawer/social-network">Social network</a>
+        <li class="rv" data-tags="backend">
+          <a href="https://github.com/HADrawer/social-network">Social network <span class="arrow" aria-hidden="true">→</span></a>
           <span class="stack">Go · Next.js · SQLite</span>
           <span class="note" data-i18n="work.p3">Accounts and privacy; teammates did chat and groups.</span>
         </li>
-        <li>
-          <a href="https://github.com/HADrawer/nft-marketplace">NFT marketplace</a>
+        <li class="rv" data-tags="chain">
+          <a href="https://github.com/HADrawer/nft-marketplace">NFT marketplace <span class="arrow" aria-hidden="true">→</span></a>
           <span class="stack">Solidity · Ethereum</span>
           <span class="note" data-i18n="work.p4">List, buy, and transfer NFTs on-chain.</span>
         </li>
-        <li>
-          <a href="https://github.com/HADrawer/AI-Travel-Itinerary-Planner">AI travel planner</a>
+        <li class="rv" data-tags="backend">
+          <a href="https://github.com/HADrawer/AI-Travel-Itinerary-Planner">AI travel planner <span class="arrow" aria-hidden="true">→</span></a>
           <span class="stack">Next.js · FastAPI · PostgreSQL</span>
           <span class="note" data-i18n="work.p5">Bilingual itineraries. I did the APIs and accounts.</span>
         </li>
-        <li>
-          <a href="https://github.com/HADrawer/Payment-Channel">Payment channel</a>
+        <li class="rv" data-tags="chain">
+          <a href="https://github.com/HADrawer/Payment-Channel">Payment channel <span class="arrow" aria-hidden="true">→</span></a>
           <span class="stack">Node.js · CLI · RPC</span>
           <span class="note" data-i18n="work.p6">Off-chain channel prototype to learn channel state.</span>
         </li>
@@ -94,20 +112,25 @@
       <p class="more"><span data-i18n="work.more">Everything else is on</span> <a href="https://github.com/HADrawer?tab=repositories">GitHub</a>.</p>
     </section>
 
-    <section id="about">
-      <h2 data-i18n="about.title">About</h2>
-      <p data-i18n="about.p1">Two years at Reboot building systems with a team, then a SaaS internship at Script Solutions. I like the unglamorous parts: auth, migrations, debugging.</p>
-      <p><span data-i18n="about.edu">BSc Computer Science (cloud), University of Bahrain · Full-stack diploma, Reboot (2024–2026)</span></p>
+    <section class="wrap cols">
+      <div class="rv" id="about">
+        <h2 data-i18n="about.title">About</h2>
+        <p data-i18n="about.p1">Two years at Reboot building systems with a team, then a SaaS internship at Script Solutions. I like the unglamorous parts: auth, migrations, debugging.</p>
+        <p class="muted" data-i18n="about.edu">BSc Computer Science (cloud), University of Bahrain · Full-stack diploma, Reboot (2024–2026)</p>
+      </div>
+      <div class="rv" id="stack">
+        <h2 data-i18n="stack.title">Stack</h2>
+        <p class="mono">Rust · Go · TypeScript · Python · Solidity · React · Next.js · FastAPI · PostgreSQL · GraphQL · Docker · Ethereum</p>
+      </div>
     </section>
 
-    <section id="stack">
-      <h2 data-i18n="stack.title">Stack</h2>
-      <p class="mono">Rust · Go · TypeScript · Python · Solidity · React · Next.js · FastAPI · PostgreSQL · GraphQL · Docker · Ethereum</p>
-    </section>
-
-    <section id="contact">
+    <section class="wrap" id="contact">
       <h2 data-i18n="contact.title">Contact</h2>
       <p><a class="big" href="mailto:hashemalsaie0457@gmail.com">hashemalsaie0457@gmail.com</a></p>
+      <p class="row">
+        <button class="btn ghost" id="copyEmail2" type="button" data-i18n="hero.copy">Copy email</button>
+        <a class="btn ghost" href="tel:+97336077327">+973 36077327</a>
+      </p>
     </section>
   </main>
 

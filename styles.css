@@ -264,6 +264,7 @@ footer { border-top: 1px solid var(--line); margin-top: 1rem; }
 }
 @media (max-width: 600px) {
   .links-inline { display: none; }
+  .wrap { padding-inline: 1.7rem; }
   .hero-art {
     order: -1;
     justify-self: center;

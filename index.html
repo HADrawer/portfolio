@@ -1,741 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#090c12">
-    <meta name="color-scheme" content="dark">
-
-    <title>Hashem Ahmed Alkhaldy — Full-Stack Developer in Bahrain</title>
-    <meta
-      name="description"
-      content="The Developer's Expedition: ten projects spanning multi-tenant SaaS, secure APIs, blockchain network tooling, tokenized financial applications, systems, and data interfaces."
-    >
-    <link rel="canonical" href="https://hadrawer.github.io/portfolio/">
-
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="Hashem Ahmed Alkhaldy — Full-Stack Developer">
-    <meta property="og:description" content="Explore ten full-stack projects spanning multi-tenant SaaS, secure APIs, blockchain tooling, tokenized assets, systems, and data interfaces.">
-    <meta property="og:url" content="https://hadrawer.github.io/portfolio/">
-    <meta property="og:site_name" content="Hashem Ahmed Alkhaldy">
-    <meta property="og:image" content="https://hadrawer.github.io/portfolio/assets/images/social-preview.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Hashem Ahmed Alkhaldy — The Developer's Expedition">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hashem Ahmed Alkhaldy — Full-Stack Developer">
-    <meta name="twitter:description" content="A Bahrain-based developer portfolio spanning multi-tenant SaaS, secure APIs, blockchain network tooling, and data-driven interfaces.">
-    <meta name="twitter:image" content="https://hadrawer.github.io/portfolio/assets/images/social-preview.png">
-
-    <link rel="icon" href="assets/icons/monogram.svg" type="image/svg+xml">
-    <link rel="preload" href="assets/fonts/cormorant-garamond-latin-500-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/public-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Hashem Ahmed Alkhaldy",
-        "url": "https://hadrawer.github.io/portfolio",
-        "email": "mailto:hashemalsaie0457@gmail.com",
-        "telephone": "+973 36077327",
-        "jobTitle": "Full-Stack Developer | Software Developer Intern",
-        "homeLocation": { "@type": "Country", "name": "Bahrain" },
-        "sameAs": [
-          "https://linkedin.com/in/hashem-alsaie-8a0215244",
-          "https://github.com/hadrawer"
-        ],
-        "alumniOf": [
-          { "@type": "CollegeOrUniversity", "name": "University of Bahrain" },
-          { "@type": "EducationalOrganization", "name": "Reboot Coding Institute" }
-        ],
-        "knowsAbout": [
-          "Multi-tenant SaaS",
-          "REST APIs",
-          "GraphQL",
-          "Ethereum network tooling",
-          "Tokenized financial applications",
-          "Data-driven interfaces"
-        ],
-        "subjectOf": {
-          "@type": "ItemList",
-          "name": "Software project portfolio",
-          "numberOfItems": 10,
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "ClinicFlow" },
-            { "@type": "ListItem", "position": 2, "name": "Financial Instruments Platform" },
-            { "@type": "ListItem", "position": 3, "name": "Node Dashboard - Benchy" },
-            { "@type": "ListItem", "position": 4, "name": "Alsayh" },
-            { "@type": "ListItem", "position": 5, "name": "Social Media Platform" },
-            { "@type": "ListItem", "position": 6, "name": "Localhost Server Project" },
-            { "@type": "ListItem", "position": 7, "name": "NFT Marketplace" },
-            { "@type": "ListItem", "position": 8, "name": "GraphQL Profile Dashboard" },
-            { "@type": "ListItem", "position": 9, "name": "Thunder Payment Channel" },
-            { "@type": "ListItem", "position": 10, "name": "Custom JavaScript Mini-Framework" }
-          ]
-        }
-      }
-    </script>
-  </head>
-
-  <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-
-    <div class="site-atmosphere" aria-hidden="true">
-      <div class="atmosphere__stars"></div>
-      <div class="atmosphere__light"></div>
-      <div class="atmosphere__fog atmosphere__fog--one"></div>
-      <div class="atmosphere__fog atmosphere__fog--two"></div>
-      <div class="atmosphere__grain"></div>
-    </div>
-
-    <header class="site-header" data-site-header aria-label="Portfolio header">
-      <a class="brand" href="#home" aria-label="Hashem Ahmed Alkhaldy, home">
-        <svg class="brand__sigil" viewBox="0 0 44 44" aria-hidden="true">
-          <path d="M22 2 38 11v22L22 42 6 33V11Z"></path>
-          <path d="M14 29V15m16 14V15M14 22h16"></path>
-          <circle cx="22" cy="22" r="3"></circle>
-        </svg>
-        <span>
-          <b>Hashem Alkhaldy</b>
-          <small>Full-Stack Developer · Bahrain</small>
-        </span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle hidden>
-        <span>Journey menu</span>
-        <i aria-hidden="true"></i>
-      </button>
-
-      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" data-nav>
-        <a href="#home" data-nav-link>Home</a>
-        <a href="#projects" data-nav-link>Projects</a>
-        <a href="#skills" data-nav-link>Skills</a>
-        <a href="#experience" data-nav-link>Experience</a>
-        <a href="#about" data-nav-link>About</a>
-        <a href="#contact" data-nav-link>Contact</a>
-        <a class="site-nav__resume" href="assets/resume/Hashem_Alkhaldy_CV.pdf" download="Hashem_Alkhaldy_CV.pdf" aria-label="Download Hashem Alkhaldy's CV as PDF">CV <span aria-hidden="true">↓</span></a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf8f4">
+  <meta name="color-scheme" content="light">
+  <title>Hashem Alkhaldy — Full-stack developer</title>
+  <meta name="description" content="Hashem Alkhaldy is a full-stack developer in Bahrain. APIs, databases, and blockchain tooling — work listed below, nothing staged.">
+  <link rel="canonical" href="https://hadrawer.github.io/portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hashem Alkhaldy — Full-stack developer">
+  <meta property="og:description" content="Full-stack developer in Bahrain. APIs, databases, and blockchain tooling.">
+  <meta property="og:url" content="https://hadrawer.github.io/portfolio/">
+  <meta property="og:image" content="https://hadrawer.github.io/portfolio/assets/images/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Hashem Alkhaldy</a>
+      <nav aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main id="main-content" tabindex="-1">
-      <section class="hero" id="home" aria-labelledby="hero-title" data-section="home">
-        <div class="hero__scene" aria-hidden="true">
-          <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
-            <defs>
-              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#090c12"></stop>
-                <stop offset=".55" stop-color="#14202d"></stop>
-                <stop offset="1" stop-color="#1a2029"></stop>
-              </linearGradient>
-              <radialGradient id="moonGlow">
-                <stop offset="0" stop-color="#d9eef0" stop-opacity=".8"></stop>
-                <stop offset=".22" stop-color="#91c7d5" stop-opacity=".25"></stop>
-                <stop offset="1" stop-color="#91c7d5" stop-opacity="0"></stop>
-              </radialGradient>
-              <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#17202a"></stop>
-                <stop offset="1" stop-color="#090c12"></stop>
-              </linearGradient>
-            </defs>
-            <rect width="1600" height="900" fill="url(#sky)"></rect>
-            <circle cx="1210" cy="235" r="210" fill="url(#moonGlow)" class="scene-moon-glow"></circle>
-            <circle cx="1210" cy="235" r="68" fill="#d7e5e1" opacity=".76"></circle>
-            <circle cx="1237" cy="214" r="67" fill="#121b26"></circle>
-            <g class="scene-stars" fill="#d8e8e7">
-              <circle cx="220" cy="180" r="2"></circle><circle cx="362" cy="108" r="1.5"></circle>
-              <circle cx="510" cy="218" r="1"></circle><circle cx="842" cy="128" r="2"></circle>
-              <circle cx="1030" cy="92" r="1"></circle><circle cx="1388" cy="162" r="1.5"></circle>
-              <path d="m273 257 6 12 13 3-13 4-6 12-5-12-13-4 13-3Z"></path>
-            </g>
-            <g class="scene-constellation" fill="none" stroke="#91c7d5" stroke-opacity=".28">
-              <path d="m256 272 170-86 159 88 155-131"></path>
-              <circle cx="256" cy="272" r="4"></circle><circle cx="426" cy="186" r="4"></circle>
-              <circle cx="585" cy="274" r="4"></circle><circle cx="740" cy="143" r="4"></circle>
-            </g>
-            <path d="M0 584 176 462l143 80 194-146 157 136 220-180 166 164 228-142 316 198v328H0Z" fill="#111925" opacity=".88" class="scene-mountains--far"></path>
-            <path d="M0 668 226 536l162 118 215-158 226 154 242-139 195 133 174-94 160 91v259H0Z" fill="#0d131c" class="scene-mountains--near"></path>
-            <g class="scene-ruin" fill="#080b10" stroke="#28384a" stroke-width="3">
-              <path d="M1044 610V304h43v-38h89v38h41v306Z"></path>
-              <path d="M1085 610V405c0-69 92-69 92 0v205Z" fill="#111925"></path>
-              <path d="M1064 266c5-98 136-98 142 0Z"></path>
-              <path d="M1111 201h29v-70h-29Z"></path>
-              <path d="m1125 99 13 32h-27Z" fill="#c8a96a" opacity=".65"></path>
-            </g>
-            <path d="M0 722c238-44 381-5 551 29 196 39 328-49 515-34 190 14 307 74 534 8v175H0Z" fill="url(#ground)"></path>
-            <path d="M705 900c74-184 241-224 406-296-116 91-216 180-251 296Z" fill="#243242" opacity=".55" class="scene-path"></path>
-            <path d="M789 900c62-153 180-216 322-296" fill="none" stroke="#c8a96a" stroke-opacity=".38" stroke-width="3" stroke-dasharray="5 14" class="scene-path-light"></path>
-            <g class="scene-foreground" fill="#06080c">
-              <path d="M0 695c87-87 153-73 244-159 1 104-25 240-82 364H0Z"></path>
-              <path d="M1600 630c-100-60-160-104-260-207 19 162 54 326 112 477h148Z"></path>
-              <path d="M70 716h16v-218H70zm-25-212h66l-33-51Z"></path>
-              <path d="M1494 709h13V522h-13zm-24-183h61l-31-47Z"></path>
-            </g>
-          </svg>
-        </div>
-
-        <div class="hero__shade" aria-hidden="true"></div>
-
-        <div class="shell hero__content">
-          <p class="chapter-mark"><span>Expedition I</span> A full-stack journey</p>
-          <div class="hero__identity">
-            <p class="hero__prelude">The Developer’s Expedition</p>
-            <h1 id="hero-title">Hashem Ahmed<br><span>Alkhaldy</span></h1>
-            <p class="hero__role">Full-Stack Developer <i aria-hidden="true"></i> Software Developer Intern</p>
-          </div>
-
-          <div class="hero__brief">
-            <p>Full-stack developer building multi-tenant SaaS platforms, secure APIs, blockchain network tooling, tokenized financial applications, and data-driven interfaces.</p>
-            <dl class="hero__facts">
-              <div><dt>Location</dt><dd>Bahrain</dd></div>
-              <div><dt>Core languages</dt><dd>TypeScript · JavaScript · Python · Rust · Go · Solidity</dd></div>
-            </dl>
-            <div class="hero__actions">
-              <a class="button button--primary" href="#projects"><span>Explore the work</span><b aria-hidden="true">↓</b></a>
-              <a class="button button--secondary" href="assets/resume/Hashem_Alkhaldy_CV.pdf" download="Hashem_Alkhaldy_CV.pdf" aria-label="Download Hashem Alkhaldy's CV as PDF"><span>Download CV</span><b aria-hidden="true">↓</b></a>
-              <a class="hero__contact" href="mailto:hashemalsaie0457@gmail.com">Contact Hashem <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-
-          <a class="descent-marker" href="#projects" aria-label="Descend to selected projects">
-            <span aria-hidden="true"></span>
-            <b>Begin the route</b>
-          </a>
-        </div>
-      </section>
-
-      <section class="projects section" id="projects" aria-labelledby="projects-title" data-section="projects">
-        <div class="section-portal" aria-hidden="true"><span></span></div>
-        <div class="shell">
-          <header class="section-intro section-intro--journey" data-reveal>
-            <p class="section-kicker">Project atlas · Ten completed builds</p>
-            <h2 id="projects-title">The work becomes the map.</h2>
-            <p>Four primary realms lead into three additional major works and a three-project archive. Each location represents real system behavior and Hashem’s supported contributions.</p>
-          </header>
-
-          <nav class="project-atlas" aria-label="Project journey index" data-reveal>
-            <div class="project-atlas__heading">
-              <span>Expedition index</span>
-              <b>10 projects</b>
-            </div>
-            <ol>
-              <li><a href="#project-clinicflow"><span>01</span>ClinicFlow</a></li>
-              <li><a href="#project-financial"><span>02</span>Financial Instruments Platform</a></li>
-              <li><a href="#project-benchy"><span>03</span>Node Dashboard - Benchy</a></li>
-              <li><a href="#project-alsayh"><span>04</span>Alsayh</a></li>
-            </ol>
-            <div class="project-atlas__branches">
-              <a href="#additional-work"><span>05—07</span>Additional major work</a>
-              <a href="#discoveries"><span>08—10</span>Discovered archive</a>
-            </div>
-          </nav>
-
-          <div class="project-journey">
-            <svg class="journey-line" viewBox="0 0 100 1000" preserveAspectRatio="none" aria-hidden="true">
-              <path d="M52 0C5 105 94 195 48 289S6 477 54 570s38 182-8 266S28 946 50 1000"></path>
-            </svg>
-
-            <article class="realm realm--clinic" id="project-clinicflow" data-project data-ambient="126 190 174" data-reveal>
-              <div class="realm__waypoint" aria-hidden="true"><span>01</span></div>
-              <div class="realm__visual">
-                <p class="realm__fantasy-name">The Living Archive</p>
-                <svg viewBox="0 0 600 440" role="img" aria-labelledby="clinicflow-diagram-title clinicflow-diagram-description">
-                  <title id="clinicflow-diagram-title">ClinicFlow protected clinic-domain diagram</title>
-                  <desc id="clinicflow-diagram-description">Four isolated clinic chambers connect through secure access rings to a central record vault, while a pulse line crosses the system.</desc>
-                  <g class="motif-clinic-domains" fill="none">
-                    <path d="M300 211 151 112m149 99 149-99M300 211 142 326m158-115 158 115"></path>
-                    <circle cx="151" cy="112" r="47"></circle><circle cx="449" cy="112" r="47"></circle>
-                    <circle cx="142" cy="326" r="47"></circle><circle cx="458" cy="326" r="47"></circle>
-                    <circle cx="300" cy="211" r="105"></circle><circle cx="300" cy="211" r="74"></circle>
-                  </g>
-                  <g class="motif-chamber-seals">
-                    <path d="m151 88 21 12v24l-21 12-21-12v-24Z"></path>
-                    <path d="m449 88 21 12v24l-21 12-21-12v-24Z"></path>
-                    <path d="m142 302 21 12v24l-21 12-21-12v-24Z"></path>
-                    <path d="m458 302 21 12v24l-21 12-21-12v-24Z"></path>
-                  </g>
-                  <path class="motif-record-vault" d="M258 257v-70c0-57 84-57 84 0v70m-102 0h120v71H240Zm60 18v30"></path>
-                  <path class="motif-pulse" pathLength="1" d="M44 211h90l20-25 23 52 30-61 25 34h52m32 0h51l21-31 27 61 25-30h95"></path>
-                  <g class="motif-labels" aria-hidden="true"><text x="151" y="158">RECORDS</text><text x="449" y="158">VISITS</text><text x="142" y="382">BILLING</text><text x="458" y="382">PHARMACY</text></g>
-                </svg>
-              </div>
-              <div class="realm__content">
-                <p class="realm__meta">Full-stack clinic management SaaS · Multi-tenant / secure access</p>
-                <h3>ClinicFlow</h3>
-                <p class="realm__purpose">A multi-tenant clinic management platform covering patient records, appointments, clinical visits, prescriptions, pharmacy inventory, billing, insurance, messaging, analytics, documents, and quality management.</p>
-                <ul class="stack-line" aria-label="ClinicFlow technologies">
-                  <li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>FastAPI</li><li>SQLAlchemy</li><li>PostgreSQL</li><li>JWT</li><li>Alembic</li><li>Neon</li><li>Vercel</li>
-                </ul>
-                <details class="technical-record">
-                  <summary>Open technical record <span aria-hidden="true"></span></summary>
-                  <div class="technical-record__body">
-                    <div><h4>Protected architecture</h4><p>Implemented JWT authentication, role-based access control, clinic-level data isolation, and audit logging.</p></div>
-                    <div><h4>Data and delivery</h4><p>Used Alembic database migrations, connected the application to Neon PostgreSQL, and used separate Vercel deployments for the application components.</p></div>
-                  </div>
-                </details>
-                <!-- PROJECT_LINK_SLOT: ClinicFlow repository and live-demo URLs have not been supplied. -->
-              </div>
-            </article>
-
-            <article class="realm realm--financial" id="project-financial" data-project data-ambient="200 169 106" data-reveal>
-              <div class="realm__waypoint" aria-hidden="true"><span>02</span></div>
-              <div class="realm__visual">
-                <p class="realm__fantasy-name">The Concordant Vault</p>
-                <svg viewBox="0 0 600 440" role="img" aria-labelledby="financial-diagram-title financial-diagram-description">
-                  <title id="financial-diagram-title">Financial Instruments Platform market-order diagram</title>
-                  <desc id="financial-diagram-description">Stablecoin, share, and bond seals enter an illuminated ledger. Three offers merge to fulfil one larger market request beside locked and unlocked asset states.</desc>
-                  <g class="motif-ledger" fill="none">
-                    <circle cx="300" cy="213" r="156"></circle><circle cx="300" cy="213" r="124"></circle>
-                    <path d="M230 86h140l43 127-43 128H230l-43-128Z"></path>
-                    <path d="M300 57V25m0 376v-33M144 213h-33m378 0h-33"></path>
-                  </g>
-                  <g class="motif-asset-seals">
-                    <path d="m184 112 31 18v36l-31 18-31-18v-36Z"></path>
-                    <circle cx="300" cy="104" r="36"></circle>
-                    <path d="m416 112 36 54h-72Z"></path>
-                  </g>
-                  <g class="motif-offers" fill="none">
-                    <circle cx="130" cy="268" r="17"></circle><circle cx="130" cy="316" r="17"></circle><circle cx="130" cy="364" r="17"></circle>
-                    <path class="market-flow" pathLength="1" d="M147 268c91 0 89 54 170 54M147 316h170m-170 48c91 0 89-42 170-42h112"></path>
-                    <path d="m413 309 17 13-17 13"></path>
-                    <circle cx="463" cy="322" r="31"></circle>
-                  </g>
-                  <path class="motif-lock" d="M273 232v-22c0-36 54-36 54 0v22m-66 0h78v54h-78Zm39 17v18"></path>
-                  <g class="motif-labels" aria-hidden="true"><text x="184" y="202">STABLE</text><text x="300" y="162">SHARES</text><text x="416" y="202">BONDS</text><text x="463" y="370">FILLED</text></g>
-                </svg>
-              </div>
-              <div class="realm__content">
-                <p class="realm__meta">Hybrid blockchain financial marketplace · Smart contracts / APIs</p>
-                <h3>Financial Instruments Platform</h3>
-                <p class="realm__purpose">A hybrid blockchain marketplace supporting a stablecoin, tokenized company shares, government bonds, wallet connection, asset pages, order placement, portfolio tracking, deposits, and withdrawals.</p>
-                <ul class="stack-line" aria-label="Financial Instruments Platform technologies">
-                  <li>Ethereum</li><li>Solidity</li><li>Smart contracts</li><li>REST API</li><li>Database</li><li>Web interface</li><li>ERC20</li><li>Tokenized assets</li>
-                </ul>
-                <details class="technical-record">
-                  <summary>Open technical record <span aria-hidden="true"></span></summary>
-                  <div class="technical-record__body">
-                    <div><h4>Market and ledger logic</h4><p>Built financial instrument and vault smart contracts, asset and order APIs, price-history storage, and populated test data. Trade execution can combine multiple offers to fulfil a market request.</p></div>
-                    <div><h4>Ownership controls</h4><p>Implemented dividend distribution for share owners and withdrawal controls that prevent assets locked in pending orders from being withdrawn.</p></div>
-                  </div>
-                </details>
-                <!-- PROJECT_LINK_SLOT: Financial Instruments Platform repository and live-demo URLs have not been supplied. -->
-              </div>
-            </article>
-
-            <article class="realm realm--benchy" id="project-benchy" data-project data-ambient="145 199 213" data-reveal>
-              <div class="realm__waypoint" aria-hidden="true"><span>03</span></div>
-              <div class="realm__visual">
-                <p class="realm__fantasy-name">The Fivefold Network</p>
-                <svg viewBox="0 0 600 440" role="img" aria-labelledby="benchy-diagram-title benchy-diagram-description">
-                  <title id="benchy-diagram-title">Benchy five-node private Ethereum network diagram</title>
-                  <desc id="benchy-diagram-description">Five peer-connected towers use two client styles. Block signals cross the Clique network while one dimmed node reconnects through a recovery path.</desc>
-                  <g class="motif-consensus-links" fill="none">
-                    <path d="M300 88 448 177l-57 166H209l-57-166Zm0 0 91 255M448 177 209 343m182 0L152 177m57 166L300 88"></path>
-                  </g>
-                  <g class="motif-node motif-node--geth">
-                    <path d="M270 118V55h60v63m-71 0h82l-12 65h-58Z"></path>
-                    <path d="M118 208v-63h68v63m-79 0h90l-13 65h-64Z"></path>
-                    <path d="M357 374v-63h68v63m-79 0h90l-13 39h-64Z"></path>
-                  </g>
-                  <g class="motif-node motif-node--nethermind">
-                    <path d="M414 208v-63h68v63m-79 0h90l-13 65h-64Z"></path>
-                    <path d="M175 374v-63h68v63m-79 0h90l-13 39h-64Z"></path>
-                  </g>
-                  <g class="motif-block-signals">
-                    <rect x="286" y="202" width="28" height="28"></rect><rect x="328" y="202" width="28" height="28"></rect><rect x="370" y="202" width="28" height="28"></rect>
-                  </g>
-                  <path class="motif-recovery" pathLength="1" d="M469 289c47 53-10 112-58 93"></path>
-                  <path class="motif-recovery-arrow" d="m420 365-9 17 19 5"></path>
-                  <g class="motif-monitors" fill="none"><path d="M65 335h63m-63 17h44m382-17h44m-44 17h63"></path></g>
-                  <g class="motif-labels" aria-hidden="true"><text x="300" y="32">GETH</text><text x="448" y="124">NETHERMIND</text><text x="300" y="260">CLIQUE</text><text x="473" y="404">RECOVERY</text></g>
-                </svg>
-              </div>
-              <div class="realm__content">
-                <p class="realm__meta">Ethereum network launching, monitoring, and benchmarking CLI</p>
-                <h3>Node Dashboard - Benchy</h3>
-                <p class="realm__purpose">A CLI tool for launching and managing a private five-node Ethereum network with Geth and Nethermind clients, Clique consensus, background execution, and direct or containerized nodes.</p>
-                <ul class="stack-line" aria-label="Node Dashboard - Benchy technologies">
-                  <li>Python</li><li>Ethereum</li><li>Geth</li><li>Nethermind</li><li>Docker</li><li>CLI</li><li>JSON-RPC</li><li>Clique consensus</li>
-                </ul>
-                <details class="technical-record">
-                  <summary>Open technical record <span aria-hidden="true"></span></summary>
-                  <div class="technical-record__body">
-                    <div><h4>Network visibility</h4><p>Monitors the latest block, connected peers, mempool transactions, CPU and memory usage, Ethereum addresses, and balances.</p></div>
-                    <div><h4>Hashem’s contribution</h4><p>Built the CLI, integrated Geth and Nethermind, added Docker and direct-node execution, JSON-RPC health and blockchain-state monitoring, transaction scenarios, and temporary node failure recovery.</p></div>
-                  </div>
-                </details>
-                <!-- PROJECT_LINK_SLOT: Node Dashboard - Benchy repository and live-demo URLs have not been supplied. -->
-              </div>
-            </article>
-
-            <article class="realm realm--alsayh" id="project-alsayh" data-project data-ambient="145 199 213" data-reveal>
-              <div class="realm__waypoint" aria-hidden="true"><span>04</span></div>
-              <div class="realm__visual">
-                <p class="realm__fantasy-name">The Observatory</p>
-                <svg viewBox="0 0 600 440" aria-hidden="true">
-                  <g class="motif-orbits" fill="none">
-                    <circle cx="320" cy="195" r="142"></circle>
-                    <ellipse cx="320" cy="195" rx="218" ry="72" transform="rotate(-17 320 195)"></ellipse>
-                    <path d="M116 306C230 269 304 244 481 81"></path>
-                  </g>
-                  <g class="motif-stars">
-                    <circle cx="143" cy="116" r="4"></circle><circle cx="230" cy="271" r="5"></circle>
-                    <circle cx="402" cy="94" r="4"></circle><circle cx="493" cy="223" r="5"></circle>
-                    <path d="m320 48 7 15 16 4-16 5-7 15-7-15-16-5 16-4Z"></path>
-                  </g>
-                  <path class="motif-land" d="M39 389 145 277l82 61 95-128 96 128 77-57 72 108Z"></path>
-                  <path class="motif-structure" d="M257 389V224h126v165M279 224c8-79 74-79 82 0m-62-8v-47h42v47m-21-47v-53"></path>
-                  <path class="motif-light" d="m320 115 0 54m-104 175 104-119 104 119"></path>
-                </svg>
-              </div>
-              <div class="realm__content">
-                <p class="realm__meta">Graduation project · Full-stack / AI travel planning</p>
-                <h3>Alsayh</h3>
-                <p class="realm__purpose">A tourism-focused AI itinerary planner built to improve trip planning through personalized recommendations and clear user flows.</p>
-                <ul class="stack-line" aria-label="Alsayh technologies">
-                  <li>Next.js</li><li>FastAPI</li><li>PostgreSQL</li><li>API integrations</li>
-                </ul>
-                <details class="technical-record">
-                  <summary>Open technical record <span aria-hidden="true"></span></summary>
-                  <div class="technical-record__body">
-                    <div><h4>System focus</h4><p>Connect backend APIs, structured destination data, and personalized recommendations in one planning flow.</p></div>
-                    <div><h4>Hashem’s contribution</h4><p>Built the full-stack planner and contributed to personalized recommendations, backend APIs, and clear user flows.</p></div>
-                  </div>
-                </details>
-                <!-- PROJECT_LINK_SLOT: Alsayh repository and live-demo URLs have not been supplied. -->
-              </div>
-            </article>
-
-          </div>
-
-          <section class="waystations" id="additional-work" aria-labelledby="additional-work-title">
-            <header class="discoveries__header" data-reveal>
-              <p class="section-kicker">Waypoints 05—07 · Additional major work</p>
-              <h3 id="additional-work-title">The route branches, but does not diminish.</h3>
-              <p>Three substantial builds across privacy-aware social systems, Rust backend architecture, and Ethereum ownership workflows.</p>
-            </header>
-            <div class="waystation-route">
-              <article class="waystation waystation--social" id="project-social" data-project data-ambient="142 73 81" data-reveal>
-                <span class="waystation__marker" aria-hidden="true"><span>05</span></span>
-                <div class="waystation__motif" aria-hidden="true">
-                  <p>The Connected Kingdom</p>
-                  <svg viewBox="0 0 260 180"><g class="motif-network" fill="none"><path d="m35 128 62-67 67 35 61-68M97 61l-4 88m71-53 39 53M97 61l47-38 20 73"></path><circle cx="35" cy="128" r="9"></circle><circle cx="97" cy="61" r="12"></circle><circle cx="93" cy="149" r="8"></circle><circle cx="144" cy="23" r="9"></circle><circle cx="164" cy="96" r="12"></circle><circle cx="203" cy="149" r="8"></circle><circle cx="225" cy="28" r="10"></circle></g><g class="motif-seals"><path d="m164 80 14 8v16l-14 8-14-8V88Z"></path><circle cx="164" cy="96" r="4"></circle></g></svg>
-                </div>
-                <div class="waystation__content">
-                  <p class="realm__meta">Web platform · Authentication / privacy</p>
-                  <h4>Social Media Platform</h4>
-                  <p>An authenticated social platform where public account posts are visible to everyone and private account posts are limited to approved followers.</p>
-                  <ul class="stack-line" aria-label="Social Media Platform technologies"><li>Go</li><li>Next.js</li><li>SQLite</li><li>REST APIs</li></ul>
-                  <details class="technical-record">
-                    <summary>Open technical record <span aria-hidden="true"></span></summary>
-                    <div class="technical-record__body">
-                      <div><h5>Hashem’s contribution</h5><p>Developed authentication, profile management, edit-account flows, avatar support, privacy controls, and follower/following views.</p></div>
-                      <p class="team-boundary"><b>Team boundary:</b> Teammates delivered groups, notifications, and WebSocket chat features.</p>
-                    </div>
-                  </details>
-                  <!-- PROJECT_LINK_SLOT: Social Media Platform repository and live-demo URLs have not been supplied. -->
-                </div>
-              </article>
-
-              <article class="waystation waystation--server" id="project-localhost" data-project data-ambient="200 169 106" data-reveal>
-                <span class="waystation__marker" aria-hidden="true"><span>06</span></span>
-                <div class="waystation__motif" aria-hidden="true">
-                  <p>The Iron Gate</p>
-                  <svg viewBox="0 0 260 180"><g class="motif-gears" fill="none"><circle cx="61" cy="105" r="35"></circle><circle cx="61" cy="105" r="15"></circle><circle cx="205" cy="53" r="25"></circle><circle cx="205" cy="53" r="10"></circle></g><path class="motif-structure" d="M105 168V34h90v134m-70 0V77c0-52 50-52 50 0v91M105 51h90M97 34h106"></path><g class="motif-request" fill="none"><path d="M8 145h89m106 0h49"></path><path d="m87 137 10 8-10 8m126-8-10-8v16"></path></g></svg>
-                </div>
-                <div class="waystation__content">
-                  <p class="realm__meta">Systems / backend · Rust / HTTP</p>
-                  <h4>Localhost Server Project</h4>
-                  <p>A local HTTP server implemented in Rust with structured request handling, routing, response generation, and error handling.</p>
-                  <ul class="stack-line" aria-label="Localhost Server Project technologies"><li>Rust</li><li>HTTP</li><li>Backend architecture</li></ul>
-                  <details class="technical-record">
-                    <summary>Open technical record <span aria-hidden="true"></span></summary>
-                    <div class="technical-record__body">
-                      <div><h5>System focus</h5><p>Parse HTTP requests, route them through server-side control flow, and generate a response or clear error.</p></div>
-                      <div><h5>Hashem’s contribution</h5><p>Implemented request handling, routing logic, response generation, error handling, and clean project organization.</p></div>
-                    </div>
-                  </details>
-                  <!-- PROJECT_LINK_SLOT: Localhost Server Project repository and live-demo URLs have not been supplied. -->
-                </div>
-              </article>
-
-              <article class="waystation waystation--nft" id="project-nft" data-project data-ambient="142 73 81" data-reveal>
-                <span class="waystation__marker" aria-hidden="true"><span>07</span></span>
-                <div class="waystation__motif" aria-hidden="true">
-                  <p>The Arcane Exchange</p>
-                  <svg viewBox="0 0 260 180"><g class="motif-vault" fill="none"><circle cx="130" cy="91" r="70"></circle><circle cx="130" cy="91" r="50"></circle><path d="m130 33 43 58-43 58-43-58Z"></path><path d="m130 52 28 39-28 39-28-39Z"></path><circle cx="130" cy="91" r="13"></circle></g><g class="motif-seals"><path d="m130 75 14 8v16l-14 8-14-8V83Z"></path></g></svg>
-                </div>
-                <div class="waystation__content">
-                  <p class="realm__meta">Blockchain prototype · Ownership / transactions</p>
-                  <h4>NFT Marketplace</h4>
-                  <p>Ethereum marketplace workflows for listing, buying, transferring, and tracking NFTs through blockchain transactions and marketplace state.</p>
-                  <ul class="stack-line" aria-label="NFT Marketplace technologies"><li>Solidity</li><li>Ethereum</li><li>Smart contracts</li><li>Frontend integration</li></ul>
-                  <details class="technical-record">
-                    <summary>Open technical record <span aria-hidden="true"></span></summary>
-                    <div class="technical-record__body">
-                      <div><h5>System focus</h5><p>Keep frontend actions aligned with blockchain transactions, marketplace state, ownership, and transfer history.</p></div>
-                      <div><h5>Hashem’s contribution</h5><p>Developed listing, buying, transfer, and tracking workflows and integrated frontend actions with blockchain state.</p></div>
-                    </div>
-                  </details>
-                  <!-- PROJECT_LINK_SLOT: NFT Marketplace repository and live-demo URLs have not been supplied. -->
-                </div>
-              </article>
-            </div>
-          </section>
-
-          <section class="discoveries" id="discoveries" aria-labelledby="discoveries-title">
-            <header class="discoveries__header" data-reveal>
-              <p class="section-kicker">Waypoints 08—10 · Discovered archive</p>
-              <h3 id="discoveries-title">Secondary discoveries</h3>
-              <p>Three focused builds across authenticated data, payment channels, and frontend architecture.</p>
-            </header>
-            <div class="discovery-path">
-              <article class="discovery discovery--graphql" id="project-graphql" data-reveal>
-                <span class="discovery__marker" aria-hidden="true">I</span>
-                <div class="discovery__motif" aria-hidden="true">
-                  <svg viewBox="0 0 180 130"><path d="m90 13 62 35v69H28V48Zm0 0v70m62-35L90 83 28 48m0 69 62-34 62 34"></path><circle cx="90" cy="13" r="5"></circle><circle cx="28" cy="48" r="5"></circle><circle cx="152" cy="48" r="5"></circle><circle cx="90" cy="83" r="5"></circle></svg>
-                </div>
-                <p class="discovery__alias">The Archive of Signals</p>
-                <h4>GraphQL Profile Dashboard</h4>
-                <p>JWT-authenticated dashboard for personal school data, including identification, XP, grades, audits, and progress.</p>
-                <p class="discovery__evidence">Used normal, nested, and argument-based queries and generated two SVG statistics graphs.</p>
-                <span class="discovery__stack">JavaScript · GraphQL · JWT · SVG</span>
-                <!-- PROJECT_LINK_SLOT: GraphQL Profile Dashboard repository and live-demo URLs have not been supplied. -->
-              </article>
-
-              <article class="discovery discovery--thunder" id="project-thunder" data-reveal>
-                <span class="discovery__marker" aria-hidden="true">II</span>
-                <div class="discovery__motif" aria-hidden="true">
-                  <svg viewBox="0 0 180 130"><circle cx="32" cy="68" r="20"></circle><circle cx="148" cy="68" r="20"></circle><path d="M52 68h27l14-32 3 59 14-27h18"></path><path d="M23 68h18m98 0h18"></path></svg>
-                </div>
-                <p class="discovery__alias">The Lightning Passage</p>
-                <h4>Thunder Payment Channel</h4>
-                <p>A command-line payment channel prototype with wallet import, peer connection, channel funding, balances, and node information.</p>
-                <p class="discovery__evidence">Explored blockchain RPC communication, channel state management, and off-chain transaction concepts.</p>
-                <span class="discovery__stack">Node.js · CLI · Blockchain RPC</span>
-                <!-- PROJECT_LINK_SLOT: Thunder Payment Channel repository and live-demo URLs have not been supplied. -->
-              </article>
-
-              <article class="discovery discovery--framework" id="project-framework" data-reveal>
-                <span class="discovery__marker" aria-hidden="true">III</span>
-                <div class="discovery__motif" aria-hidden="true">
-                  <svg viewBox="0 0 180 130"><circle cx="62" cy="68" r="34"></circle><circle cx="62" cy="68" r="13"></circle><circle cx="126" cy="49" r="23"></circle><circle cx="126" cy="49" r="8"></circle><path d="M62 22V9m0 118v-13M16 68H3m118 0H108m18-52V5m0 88v-21m24-23h15M23 29l-9-9m80 80-9-9"></path></svg>
-                </div>
-                <p class="discovery__alias">The Clockwork Workshop</p>
-                <h4>Custom JavaScript Mini-Framework</h4>
-                <p>A lightweight frontend framework for state management, reusable UI logic, and client-side routing.</p>
-                <p class="discovery__evidence">Reduced repetitive frontend code and improved maintainability across interactive pages.</p>
-                <span class="discovery__stack">JavaScript · Routing · State management</span>
-                <!-- PROJECT_LINK_SLOT: Custom JavaScript Mini-Framework repository and live-demo URLs have not been supplied. -->
-              </article>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <section class="arsenal section" id="skills" aria-labelledby="skills-title" data-section="skills">
-        <div class="arsenal__sky" aria-hidden="true"></div>
-        <div class="shell">
-          <header class="section-intro section-intro--center" data-reveal>
-            <p class="section-kicker">The Developer’s Toolkit</p>
-            <h2 id="skills-title">The Arsenal</h2>
-            <p>Connected disciplines across the interface, services, data, systems, blockchain, and delivery layers.</p>
-          </header>
-
-          <div class="arsenal-map" data-reveal>
-            <svg class="arsenal-map__lines" viewBox="0 0 1000 740" preserveAspectRatio="none" aria-hidden="true">
-              <circle cx="500" cy="370" r="170"></circle><circle cx="500" cy="370" r="286"></circle>
-              <path d="M500 370 208 125m292 245 304-246M500 370 153 370m347 0h347M500 370 238 620m262-250 271 250"></path>
-            </svg>
-            <div class="arsenal-core" aria-hidden="true">
-              <span></span><b>Full<br>Stack</b><i></i>
-            </div>
-
-            <section class="discipline discipline--interface">
-              <p>Discipline I</p><h3>Languages</h3>
-              <ul><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>Rust</li><li>Go</li><li>Solidity</li></ul>
-            </section>
-            <section class="discipline discipline--backend">
-              <p>Discipline II</p><h3>Frontend</h3>
-              <ul><li>Next.js</li><li>React</li><li>Tailwind CSS</li><li>Responsive UI</li><li>Arabic-ready interfaces</li><li>SVG data visualization</li></ul>
-            </section>
-            <section class="discipline discipline--data">
-              <p>Discipline III</p><h3>Backend &amp; APIs</h3>
-              <ul><li>FastAPI</li><li>REST APIs</li><li>GraphQL</li><li>SQLAlchemy</li><li>Pydantic</li><li>JWT authentication</li><li>Authorization</li><li>WebSockets</li><li>JSON-RPC</li></ul>
-            </section>
-            <section class="discipline discipline--systems">
-              <p>Discipline IV</p><h3>Data &amp; Infrastructure</h3>
-              <ul><li>PostgreSQL</li><li>SQLite</li><li>Alembic</li><li>Neon</li><li>Relational data modeling</li><li>Multi-tenant data isolation</li><li>Audit logging</li></ul>
-            </section>
-            <section class="discipline discipline--blockchain">
-              <p>Discipline V</p><h3>Blockchain</h3>
-              <ul><li>Ethereum</li><li>Geth</li><li>Nethermind</li><li>Clique consensus</li><li>ERC20</li><li>Tokenized assets</li><li>Smart contracts</li><li>Blockchain RPC</li></ul>
-            </section>
-            <section class="discipline discipline--tools">
-              <p>Discipline VI</p><h3>Delivery &amp; Platforms</h3>
-              <ul><li>Git</li><li>GitHub</li><li>Linux</li><li>Docker</li><li>Vercel</li><li>Postman</li><li>CLI workflows</li></ul>
-            </section>
-          </div>
-
-          <div class="puzzle-invitation" data-reveal>
-            <div>
-              <p class="section-kicker">Optional encounter · About one minute</p>
-              <h3>Can you restore the signal path?</h3>
-              <p>Connect a full-stack request in the correct architectural order. Portfolio content is never locked behind the puzzle.</p>
-              <ul class="puzzle-fragments" aria-label="Project fragments represented in the puzzle">
-                <li>ClinicFlow · Access Control Fragment</li>
-                <li>Financial Platform · Vault Logic Fragment</li>
-                <li>Benchy · Consensus Fragment</li>
-              </ul>
-            </div>
-            <button class="button button--ornate" type="button" data-open-puzzle hidden>
-              <span>Open Constellation Debugger</span><b aria-hidden="true">✦</b>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="experience section" id="experience" aria-labelledby="experience-title" data-section="experience">
-        <div class="shell">
-          <header class="section-intro" data-reveal>
-            <p class="section-kicker">Experience &amp; education</p>
-            <h2 id="experience-title">Chapters along the route.</h2>
-            <p>Practical software experience alongside computer science and software engineering study.</p>
-          </header>
-
-          <div class="chapter-path">
-            <svg viewBox="0 0 120 780" preserveAspectRatio="none" aria-hidden="true"><path d="M58 0c-88 126 79 198 3 319s67 213-5 337c-19 33-10 80 4 124"></path></svg>
-            <article class="milestone milestone--work" data-reveal>
-              <div class="milestone__lantern" aria-hidden="true"><span></span></div>
-              <p class="milestone__date"><time datetime="2026-07">July 2026</time> — <time datetime="2026-08">August 2026</time></p>
-              <p class="milestone__type">Professional chapter</p>
-              <h3>Software Developer Intern</h3>
-              <p class="milestone__place">Script Solutions · Sanabis, Bahrain</p>
-              <ul>
-                <li>Supported feature implementation, debugging, testing, and documentation under developer supervision.</li>
-                <li>Gained exposure to SaaS solutions, custom software, API and payment integration, DevOps services, and fintech solutions.</li>
-                <li>Developed habits in version control, requirement analysis, issue tracking, and technical collaboration.</li>
-              </ul>
-            </article>
-
-            <article class="milestone milestone--university" data-reveal>
-              <div class="milestone__lantern" aria-hidden="true"><span></span></div>
-              <p class="milestone__date"><time datetime="2022-01">January 2022</time> — Present</p>
-              <p class="milestone__type">Academic chapter</p>
-              <h3>BSc Computer Science</h3>
-              <p class="milestone__place">University of Bahrain · Cloud Computing track</p>
-              <p>Coursework includes cloud computing, data structures and algorithms, databases, software project management, computer networks, cryptography and computer security, and big data.</p>
-            </article>
-
-            <article class="milestone milestone--reboot" data-reveal>
-              <div class="milestone__lantern" aria-hidden="true"><span></span></div>
-              <p class="milestone__date"><time datetime="2024-01">January 2024</time> — Present</p>
-              <p class="milestone__type">Engineering chapter</p>
-              <h3>Software Engineering Program</h3>
-              <p class="milestone__place">Reboot Coding Institute</p>
-              <p>Focused on backend systems, web development, algorithms, systems programming, collaboration, and practical delivery.</p>
-            </article>
-          </div>
-
-          <a class="text-route" href="assets/resume/Hashem_Alkhaldy_CV.pdf" download="Hashem_Alkhaldy_CV.pdf" aria-label="Download Hashem Alkhaldy's CV as PDF">Download the complete CV <span aria-hidden="true">↓</span></a>
-        </div>
-      </section>
-
-      <section class="about section" id="about" aria-labelledby="about-title" data-section="about">
-        <div class="about__architecture" aria-hidden="true">
-          <span class="about__arch about__arch--one"></span><span class="about__arch about__arch--two"></span>
-        </div>
-        <div class="shell about__layout">
-          <header class="section-intro" data-reveal>
-            <p class="section-kicker">A quieter chamber</p>
-            <h2 id="about-title">Where systems meet the people using them.</h2>
-          </header>
-          <div class="about__copy" data-reveal>
-            <p>Hashem builds multi-tenant SaaS platforms, secure APIs, blockchain network tooling, tokenized financial applications, and data-driven interfaces.</p>
-            <p>Across web platforms, dashboards, servers, and blockchain prototypes, he works across frontend and backend layers to make system behavior and user flows clear, testable, and practical.</p>
-            <dl>
-              <div><dt>Professional focus</dt><dd>Full-stack · Backend · Junior software development</dd></div>
-              <div><dt>Languages</dt><dd>Arabic — Native<br>English — Professional working proficiency</dd></div>
-              <div><dt>Working style</dt><dd>Maintainable code · API integration · Collaborative delivery</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact section" id="contact" aria-labelledby="contact-title" data-section="contact">
-        <div class="contact__beacon" aria-hidden="true">
-          <div class="beacon__rings"><span></span><span></span><span></span></div>
-          <div class="beacon__gate"><i></i></div>
-        </div>
-        <div class="shell contact__content" data-reveal>
-          <p class="section-kicker">Final destination · The communication beacon</p>
-          <h2 id="contact-title">Start a conversation.</h2>
-          <p>For junior software, full-stack, or backend developer opportunities.</p>
-
-          <a class="contact__email" href="mailto:hashemalsaie0457@gmail.com">
-            <span>Email Hashem</span>
-            <b>hashemalsaie0457@gmail.com <i aria-hidden="true">↗</i></b>
-          </a>
-          <button class="copy-button" type="button" data-copy-email hidden>Copy email address</button>
-          <p class="copy-status" role="status" aria-live="polite" data-copy-status></p>
-
-          <address class="contact-routes">
-            <a href="https://linkedin.com/in/hashem-alsaie-8a0215244"><span>LinkedIn</span><b>Professional profile</b><i aria-hidden="true">↗</i></a>
-            <a href="https://github.com/hadrawer"><span>GitHub</span><b>@hadrawer</b><i aria-hidden="true">↗</i></a>
-            <a href="tel:+97336077327"><span>Phone</span><b>+973&nbsp;36077327</b><i aria-hidden="true">↗</i></a>
-            <a href="assets/resume/Hashem_Alkhaldy_CV.pdf" download="Hashem_Alkhaldy_CV.pdf" aria-label="Download Hashem Alkhaldy's CV as PDF"><span>CV</span><b>Download PDF</b><i aria-hidden="true">↓</i></a>
-          </address>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="shell site-footer__content">
-        <p>Hashem Ahmed Alkhaldy <span aria-hidden="true">·</span> Full-Stack Developer <span aria-hidden="true">·</span> Bahrain</p>
-        <div class="site-footer__routes">
-          <a href="assets/resume/Hashem_Alkhaldy_CV.pdf" download="Hashem_Alkhaldy_CV.pdf" aria-label="Download Hashem Alkhaldy's CV as PDF">Download CV <span aria-hidden="true">↓</span></a>
-          <a href="#home">Return to the opening <span aria-hidden="true">↑</span></a>
-        </div>
+  <main id="top">
+    <section class="wrap intro">
+      <img class="photo" src="assets/images/profile.jpg" alt="Portrait of Hashem Alkhaldy" width="480" height="600">
+      <div>
+        <p class="kicker">Full-stack developer — Bahrain</p>
+        <h1>I build backends that hold up, and frontends people can actually use.</h1>
+        <p>
+          I'm Hashem. I spent two years at Reboot building real systems with other people —
+          Rust servers, Go social apps, Solidity marketplaces — then interned at Script Solutions
+          working on SaaS features, APIs, and the unglamorous debugging in between.
+        </p>
+        <p>
+          Most of my work is APIs, databases, and auth. The blockchain parts came from genuine
+          curiosity about how money moves on-chain, not hype. Everything below is code you can
+          read on my GitHub.
+        </p>
+        <p class="links">
+          <a class="btn" href="assets/resume/Hashem_Alkhaldy_CV.pdf">Download CV</a>
+          <a href="https://github.com/HADrawer">GitHub</a>
+          <a href="https://www.linkedin.com/in/hashem-alkhaldy">LinkedIn</a>
+          <a href="mailto:hashemalsaie0457@gmail.com">Email</a>
+        </p>
       </div>
-    </footer>
+    </section>
 
-    <dialog class="signal-dialog" aria-labelledby="puzzle-title" aria-describedby="puzzle-instructions" data-puzzle-dialog>
-      <div class="signal-dialog__frame">
-        <header aria-label="Puzzle header">
-          <div>
-            <p class="section-kicker">Optional technical puzzle</p>
-            <h2 id="puzzle-title">Constellation Debugger</h2>
-          </div>
-          <button class="dialog-close" type="button" data-close-puzzle autofocus>Close <span aria-hidden="true">×</span></button>
-        </header>
-        <p id="puzzle-instructions">Select the five nodes in the order a protected full-stack request travels. Use Tab and Enter with a keyboard, or tap each node.</p>
+    <section class="wrap" id="work">
+      <h2>Selected work</h2>
+      <p class="section-note">Six projects, each linked to its repo. Short descriptions, no pitch decks.</p>
+      <article class="project">
+        <h3><a href="https://github.com/HADrawer/ClinicFlow">ClinicFlow</a></h3>
+        <p class="stack">Next.js · TypeScript · FastAPI · PostgreSQL · JWT</p>
+        <p>Multi-tenant clinic management: patients, appointments, prescriptions, pharmacy, billing, and insurance. Separate tenant data, role-based access, audit logging. The boring parts done properly.</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/HADrawer/financial-instruments">Financial instruments platform</a></h3>
+        <p class="stack">Solidity · Ethereum · REST API · Web interface</p>
+        <p>A marketplace for a stablecoin, tokenized shares, and government bonds. Wallet connection, order placement, dividend distribution — plus the withdrawal guards that stop locked funds from leaving.</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/HADrawer/social-network">Social network</a></h3>
+        <p class="stack">Go · Next.js · SQLite · REST</p>
+        <p>Auth, profiles, avatars, and public/private visibility rules. My part was accounts and privacy; teammates handled groups, notifications, and chat.</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/HADrawer/nft-marketplace">NFT marketplace</a></h3>
+        <p class="stack">Solidity · Ethereum · Frontend integration</p>
+        <p>Listing, buying, transferring, and tracking NFTs through contract calls. Frontend actions wired straight to marketplace state: ownership, purchases, history.</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/HADrawer/AI-Travel-Itinerary-Planner">AI travel planner</a></h3>
+        <p class="stack">Next.js · FastAPI · PostgreSQL</p>
+        <p>Graduation project: an itinerary planner with recommendations, saved trips, and secure user flows, in two languages. I worked on the APIs and the account side.</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/HADrawer/Payment-Channel">Thunder payment channel</a></h3>
+        <p class="stack">Node.js · CLI · Blockchain RPC</p>
+        <p>A command-line prototype for off-chain payment channels: wallet import, funding, balance checks, node info. An experiment to understand channel state, and it worked.</p>
+      </article>
+      <p class="more">The rest — GraphQL dashboard, NFT marketplace, a Rust HTTP server, a tiny JS framework — lives on <a href="https://github.com/HADrawer?tab=repositories">my GitHub</a>.</p>
+    </section>
 
-        <div class="signal-board" data-signal-board>
-          <svg viewBox="0 0 800 430" preserveAspectRatio="none" aria-hidden="true">
-            <path class="signal-board__route" d="M90 316C155 242 191 108 312 118s89 174 203 184 124-124 199-182"></path>
-            <path class="signal-board__progress" d="M90 316C155 242 191 108 312 118s89 174 203 184 124-124 199-182" pathLength="4" data-signal-progress></path>
-          </svg>
-          <button class="signal-node signal-node--client" type="button" data-signal-node="1" aria-label="Client, first possible step"><span>01</span>Client</button>
-          <button class="signal-node signal-node--api" type="button" data-signal-node="2" aria-label="API, second possible step"><span>02</span>API</button>
-          <button class="signal-node signal-node--auth" type="button" data-signal-node="3" aria-label="Access control, third possible step"><span>03</span>Access control</button>
-          <button class="signal-node signal-node--service" type="button" data-signal-node="4" aria-label="Service, fourth possible step"><span>04</span>Service</button>
-          <button class="signal-node signal-node--database" type="button" data-signal-node="5" aria-label="Database, fifth possible step"><span>05</span>Database</button>
+    <section class="wrap" id="experience">
+      <h2>Experience</h2>
+      <article class="job">
+        <div class="job-head">
+          <h3>Software developer intern — Script Solutions, Sanabis</h3>
+          <p class="date">Jul 2026 – Aug 2026</p>
         </div>
+        <p>Shipped SaaS features and API integrations under supervision, fixed bugs, wrote tests and docs. Learned the habits that matter: version control, reading requirements properly, and keeping code maintainable.</p>
+      </article>
+    </section>
 
-        <div class="signal-dialog__feedback">
-          <p role="status" aria-live="polite" data-puzzle-status>Signal dormant. Begin with the request source.</p>
-          <button type="button" class="puzzle-reset" data-reset-puzzle>Restart path</button>
-        </div>
+    <section class="wrap" id="skills">
+      <h2>Skills</h2>
+      <dl class="skill-list">
+        <div><dt>Languages</dt><dd>Rust, Go, TypeScript, JavaScript, Python, Solidity, HTML, CSS</dd></div>
+        <div><dt>Frontend</dt><dd>React, Next.js, Tailwind, responsive layouts, SVG charts</dd></div>
+        <div><dt>Backend</dt><dd>FastAPI, REST, GraphQL, SQLAlchemy, Pydantic, JWT auth, WebSockets</dd></div>
+        <div><dt>Data</dt><dd>PostgreSQL, SQLite, Alembic, Neon, relational modeling</dd></div>
+        <div><dt>Blockchain</dt><dd>Ethereum, Geth, Nethermind, Clique, ERC20, smart contracts, RPC</dd></div>
+        <div><dt>Tools</dt><dd>Git, GitHub, Linux, Docker, Vercel, Postman</dd></div>
+      </dl>
+      <h2 class="sub">Education</h2>
+      <p><strong>University of Bahrain</strong> — BSc Computer Science, cloud track, 2022 to now. Cloud computing, databases, networks, security, big data.</p>
+      <p><strong>Reboot Coding Institute</strong> — Full-stack diploma, 2024 to 2026. Project-based: backends, algorithms, systems programming, shipping with a team.</p>
+      <p class="langs">Arabic, native. English, professional working proficiency.</p>
+    </section>
 
-        <div class="puzzle-reward" data-puzzle-reward hidden>
-          <p><span aria-hidden="true">✦</span> Path Discovered</p>
-          <h3>A complete request needs every layer to agree.</h3>
-          <p>Access control from ClinicFlow, vault logic from the Financial Instruments Platform, and consensus monitoring from Benchy all depend on clear agreement between system layers.</p>
-        </div>
-      </div>
-    </dialog>
-  </body>
+    <section class="wrap" id="contact">
+      <h2>Contact</h2>
+      <p>The fastest way to reach me is email. I read everything, even if I reply at odd hours.</p>
+      <p class="links">
+        <a class="btn" href="mailto:hashemalsaie0457@gmail.com">hashemalsaie0457@gmail.com</a>
+        <a href="tel:+97336077327">+973 36077327</a>
+        <a href="https://www.linkedin.com/in/hashem-alkhaldy">LinkedIn</a>
+        <a href="https://github.com/HADrawer">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Hashem Alkhaldy · Manama, Bahrain</p>
+      <p><a href="resume.html">Résumé page</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

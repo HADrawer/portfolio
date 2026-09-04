@@ -116,11 +116,11 @@ a:hover { color: var(--signal); }
   transition-duration: 0.15s;
 }
 [data-theme="dark"] .btn { color: #241708; }
-.btn:hover { filter: none; background: #6B4218; border-color: #6B4218; }
-[data-theme="dark"] .btn:hover { background: #E8C07E; border-color: #E8C07E; }
+.btn:hover { filter: none; background: #6B4218; border-color: #6B4218; color: #FFF8EC; }
+[data-theme="dark"] .btn:hover { background: #E8C07E; border-color: #E8C07E; color: #241708; }
 .btn:active { transform: scale(0.96); }
 .btn.ghost { background: transparent; color: var(--signal-ink); border-color: var(--line); }
-.btn.ghost:hover { border-color: var(--signal); }
+.btn.ghost:hover { border-color: var(--signal); color: var(--signal-ink); }
 .links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; font-size: 0.95rem; }
 
 .hero-art { justify-self: end; text-align: center; will-change: transform; }

@@ -123,8 +123,9 @@ a:hover { color: var(--signal); }
 .portrait {
   width: min(420px, 88vw);
   aspect-ratio: 2 / 1;
-  object-fit: cover;
-  object-position: top;
+  object-fit: contain;
+  object-position: center;
+  background: var(--surface);
   border-radius: 22px;
   outline: 1px solid oklch(0 0 0 / 0.1);
   border: 1px solid var(--line);

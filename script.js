@@ -2,6 +2,7 @@ var I18N = {
   en: {
     "ui.theme": "Dark",
     "nav.work": "Work",
+    "nav.exp": "Experience",
     "nav.edu": "Education",
     "nav.about": "About",
     "nav.contact": "Contact",
@@ -19,6 +20,10 @@ var I18N = {
     "work.backend": "Backend",
     "work.chain": "Blockchain",
     "work.more": "Everything else is on",
+    "exp.title": "Experience",
+    "exp.company": "Script Solutions · Sanabis",
+    "exp.role": "Software developer intern · Jul to Aug 2026",
+    "exp.p1": "SaaS features and API integrations under supervision. Debugging, tests, docs. Learned the habits that matter: version control, reading requirements, keeping code maintainable.",
     "work.p1": "Clinic management with tenant isolation and roles.",
     "work.p2": "Stablecoin, shares, bonds, with withdrawal guards.",
     "work.p3": "Accounts and privacy; teammates did chat and groups.",
@@ -45,6 +50,7 @@ var I18N = {
   ar: {
     "ui.theme": "داكن",
     "nav.work": "أعمالي",
+    "nav.exp": "الخبرة",
     "nav.edu": "التعليم",
     "nav.about": "عني",
     "nav.contact": "تواصل",
@@ -62,6 +68,10 @@ var I18N = {
     "work.backend": "خلفية",
     "work.chain": "بلوكتشين",
     "work.more": "الباقي كله على",
+    "exp.title": "الخبرة",
+    "exp.company": "Script Solutions · السنابس",
+    "exp.role": "متدرب تطوير برمجيات · يوليو إلى أغسطس 2026",
+    "exp.p1": "مزايا SaaS وتكاملات API تحت إشراف. تنقيح أخطاء واختبارات وتوثيق. تعلمت العادات المهمة: version control وقراءة المتطلبات وكود يتحمل.",
     "work.p1": "إدارة عيادات مع عزل البيانات والصلاحيات.",
     "work.p2": "عملة مستقرة وأسهم وسندات، مع ضوابط سحب.",
     "work.p3": "الحسابات والخصوصية؛ والفريق سوى المحادثات.",
@@ -96,7 +106,7 @@ function currentTheme() {
 function applyTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
   var meta = document.querySelector('meta[name="theme-color"]');
-  if (meta) meta.setAttribute("content", theme === "dark" ? "#14110D" : "#FAF7F2");
+  if (meta) meta.setAttribute("content", theme === "dark" ? "#14110D" : "#E9F0E4");
   try { localStorage.setItem("theme", theme); } catch (e) {}
 }
 

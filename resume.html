@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAF7F2">
+  <meta name="color-scheme" content="light dark">
   <title>Résumé — Hashem Alkhaldy</title>
   <meta name="description" content="Download Hashem Alkhaldy's CV as PDF.">
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .resume-box { padding: 3.5rem 0 4rem; }
-    .resume-box h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); margin-bottom: .8rem; }
-    embed { width: 100%; height: 78vh; border: 3px solid var(--ink); border-radius: 18px; margin-top: 1.5rem; background: #fff; }
+    .resume-box { padding: 3rem 0 4rem; }
+    .resume-box h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin-bottom: .8rem; }
+    .resume-box p { margin-bottom: 1rem; color: var(--muted); }
+    embed { width: 100%; height: 78vh; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
   </style>
 </head>
 <body>
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="mono" href="index.html">H<span>.</span></a>
-      <nav aria-label="Sections"><a href="index.html" data-i18n="resume.back">Back to site</a></nav>
-      <button id="langToggle" class="lang" type="button">عربي</button>
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="name" href="index.html">Hashem Alkhaldy</a>
+      <div class="toggles">
+        <button id="themeToggle" class="chip" type="button" aria-label="Toggle theme">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="4.2"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3 3l1.4 1.4M11.6 11.6L13 13M13 3l-1.4 1.4M4.4 11.6L3 13"/></svg>
+          <span data-i18n="ui.theme">Dark</span>
+        </button>
+        <button id="langToggle" class="chip" type="button">عربي</button>
+      </div>
     </div>
   </header>
   <main class="wrap resume-box">
     <h1 data-i18n="resume.title">Résumé</h1>
-    <p><span data-i18n="resume.p">One page, kept current.</span> <a class="btn solid" href="assets/resume/Hashem_Alkhaldy_CV.pdf" download data-i18n="resume.download">Download PDF</a></p>
+    <p><span data-i18n="resume.p">One page, kept current.</span> <a href="assets/resume/Hashem_Alkhaldy_CV.pdf" download data-i18n="resume.download">Download PDF</a> · <a href="index.html" data-i18n="resume.back">Back</a></p>
     <embed src="assets/resume/Hashem_Alkhaldy_CV.pdf" type="application/pdf" title="Hashem Alkhaldy CV">
   </main>
   <script src="script.js"></script>

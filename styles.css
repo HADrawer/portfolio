@@ -50,6 +50,8 @@ a:hover { color: var(--signal); }
 .top { border-bottom: 1px solid var(--line); }
 .top-in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 0.85rem; }
 .name { font-weight: 700; font-size: 1.05rem; color: var(--ink); text-decoration: none; }
+.brand { display: inline-flex; align-items: center; gap: 0.6rem; }
+.brand-logo { height: 32px; width: 32px; background: #fff; border: 1px solid var(--line); border-radius: 9px; }
 .links-inline { display: flex; gap: 1.3rem; }
 .links-inline a { color: var(--muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
 .links-inline a:hover { color: var(--ink); }
@@ -119,8 +121,8 @@ a:hover { color: var(--signal); }
 
 .hero-art { justify-self: end; text-align: center; will-change: transform; }
 .portrait {
-  width: min(440px, 85vw);
-  aspect-ratio: 10 / 7;
+  width: min(420px, 85vw);
+  aspect-ratio: 16 / 10;
   object-fit: cover;
   object-position: top;
   border-radius: 22px;

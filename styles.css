@@ -50,7 +50,7 @@ a:hover { color: var(--signal); }
 .top { border-bottom: 1px solid var(--line); }
 .top-in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 0.85rem; }
 .name { font-weight: 700; font-size: 1.05rem; color: var(--ink); text-decoration: none; }
-.brand { display: inline-flex; align-items: center; gap: 0.6rem; }
+.brand { display: inline-flex; align-items: center; gap: 1rem; }
 .brand-logo { height: 34px; width: 34px; border-radius: 9px; }
 .links-inline { display: flex; gap: 1.3rem; }
 .links-inline a { color: var(--muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; }

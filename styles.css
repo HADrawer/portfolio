@@ -90,7 +90,8 @@ a:hover { color: var(--signal); }
 }
 .hero h1 { font-size: clamp(2.6rem, 6.5vw, 4.3rem); font-weight: 800; margin-bottom: 0.4rem; }
 .role { font-size: 1.25rem; color: var(--muted); margin-bottom: 1rem; }
-.lede { font-size: 1.1rem; max-width: 36rem; margin-bottom: 1.6rem; }
+.lede { font-size: 1.1rem; max-width: 36rem; margin-bottom: 0.7rem; }
+.lede.sub { font-size: 1rem; color: var(--muted); margin-bottom: 1.6rem; }
 .row { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 1.2rem; }
 .btn {
   display: inline-flex;
@@ -118,8 +119,8 @@ a:hover { color: var(--signal); }
 
 .hero-art { justify-self: end; text-align: center; will-change: transform; }
 .portrait {
-  width: min(320px, 70vw);
-  aspect-ratio: 1 / 1;
+  width: min(360px, 78vw);
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: top;
   border-radius: 22px;
@@ -210,7 +211,22 @@ main h2 {
 #about p { margin-bottom: 0.9rem; }
 .muted { color: var(--muted); font-size: 0.95rem; }
 
+/* education */
+.edu { list-style: none; display: grid; gap: 1rem; }
+.edu li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--line);
+}
+.edu li:first-child { border-top: none; padding-top: 0; }
+.edu img { height: 42px; width: auto; flex: none; }
+.edu strong { display: block; font-size: 1.02rem; }
+.edu span { color: var(--muted); font-size: 0.92rem; }
+
 /* contact */
+#contact .row { margin-top: 1.5rem; }
 .big {
   font-family: "Sora", "IBM Plex Sans Arabic", sans-serif;
   font-size: clamp(1.2rem, 3.4vw, 1.7rem);

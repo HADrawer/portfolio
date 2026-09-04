@@ -1,22 +1,22 @@
 :root {
-  --bg: #E4EBDD;
-  --surface: #F2F6ED;
-  --ink: #1A2119;
-  --muted: #57675A;
-  --line: #CBD6C4;
-  --signal: #147A48;
-  --signal-ink: #0D6337;
+  --bg: #F0E6D2;
+  --surface: #FAF4E8;
+  --ink: #2B2117;
+  --muted: #655646;
+  --line: #DCD0B6;
+  --signal: #7A4E1F;
+  --signal-ink: #6B4218;
   --card: #FFFFFF;
 }
 
 [data-theme="dark"] {
-  --bg: #14110D;
-  --surface: #1D1914;
-  --ink: #ECE6DA;
-  --muted: #A79C8B;
-  --line: #2E2820;
-  --signal: #62D39B;
-  --signal-ink: #8FE3B7;
+  --bg: #1D140D;
+  --surface: #261C11;
+  --ink: #F0E6D4;
+  --muted: #B3A48E;
+  --line: #3B2F21;
+  --signal: #D9A45B;
+  --signal-ink: #E0B36A;
   --card: #1D1914;
 }
 
@@ -106,7 +106,7 @@ a:hover { color: var(--signal); }
   font-size: 0.95rem;
   font-family: inherit;
   background: var(--signal);
-  color: #fff;
+  color: #FFF8EC;
   border: 1px solid var(--signal);
   border-radius: 10px;
   padding: 0.65rem 1.4rem;
@@ -115,7 +115,7 @@ a:hover { color: var(--signal); }
   transition-property: transform, filter;
   transition-duration: 0.15s;
 }
-[data-theme="dark"] .btn { color: #0E1712; }
+[data-theme="dark"] .btn { color: #241708; }
 .btn:hover { filter: brightness(1.07); }
 .btn:active { transform: scale(0.96); }
 .btn.ghost { background: transparent; color: var(--signal-ink); border-color: var(--line); }

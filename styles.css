@@ -218,16 +218,7 @@ main h2 {
 .exp-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.9rem; }
 .exp-head strong { display: block; font-size: 1.05rem; }
 .exp-head span { color: var(--muted); font-size: 0.92rem; }
-.logo-chip {
-  display: inline-flex;
-  align-items: center;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 6px 12px;
-  flex: none;
-}
-.logo-chip img { display: block; }
+.exp-head img { height: 44px; width: auto; flex: none; }
 
 /* education */
 .edu { list-style: none; display: grid; gap: 1rem; }
@@ -239,7 +230,8 @@ main h2 {
   border-top: 1px solid var(--line);
 }
 .edu li:first-child { border-top: none; padding-top: 0; }
-.edu img.mark { height: 42px; width: auto; flex: none; }
+.edu li img { height: 48px; width: auto; flex: none; }
+.edu img.mark { height: 42px; }
 [data-theme="light"] .edu img.mark {
   background: #221610;
   border-radius: 10px;
